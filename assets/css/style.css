@@ -49,7 +49,7 @@ header .container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-b
 .brand-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .brand-header a{margin:0;padding:4px 10px;line-height:0;font-size:0;z-index:999}
 .header-logo{height:40px}
-#nav-menu{text-align:right;-webkit-transform:translateX(440px);transform:translateX(440px);-webkit-transition:800ms all ease-in-out;transition:800ms all ease-in-out;opacity:0}
+#nav-menu{text-align:right;-webkit-transform:translateX(420px);transform:translateX(420px);-webkit-transition:500ms all ease-in-out;transition:500ms all ease-in-out;opacity:0}
 #nav-menu ul{list-style-type:none;padding:0}
 #nav-menu li{border-bottom:0;display:inline-block}
 #nav-menu li a{font-family:"Open Sans",sans-serif;padding:0 1.25rem;text-decoration:none;font-weight:600;-webkit-transition:250ms all ease;transition:250ms all ease;color:rgba(0,0,0,0.65);font-size:1rem;cursor:pointer}
@@ -60,20 +60,20 @@ header .container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-b
 #nav-toggle span{-webkit-transition:.25s ease-in-out;transition:.25s ease-in-out;display:block;background:#2e393f;border-radius:2px}
 #nav-toggle #hamburger{position:absolute;height:100%;width:100%}
 #nav-toggle #hamburger span{width:30px;height:4px;position:relative;top:0;left:0;margin:5px 0}
-#nav-toggle #hamburger span:nth-child(1){-webkit-transition-delay:.5s;transition-delay:.5s}
-#nav-toggle #hamburger span:nth-child(2){-webkit-transition-delay:.625s;transition-delay:.625s}
-#nav-toggle #hamburger span:nth-child(3){-webkit-transition-delay:.75s;transition-delay:.75s}
+#nav-toggle #hamburger span:nth-child(1){-webkit-transition-delay:.3s;transition-delay:.3s}
+#nav-toggle #hamburger span:nth-child(2){-webkit-transition-delay:.38s;transition-delay:.38s}
+#nav-toggle #hamburger span:nth-child(3){-webkit-transition-delay:.44s;transition-delay:.44s}
 #nav-toggle #cross{position:absolute;height:100%;width:100%;top:2px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
 #nav-toggle #cross span{position:absolute}
 #nav-toggle #cross span:nth-child(1){height:0;width:4px;top:0;left:14px;-webkit-transition-delay:0s;transition-delay:0s}
-#nav-toggle #cross span:nth-child(2){width:0;height:4px;left:0;top:14px;-webkit-transition-delay:.25s;transition-delay:.25s}
+#nav-toggle #cross span:nth-child(2){width:0;height:4px;left:0;top:14px;-webkit-transition-delay:.18s;transition-delay:.18s}
 #nav-menu.nav-open{opacity:1;-webkit-transform:translateX(-60px);transform:translateX(-60px)}
 #nav-toggle.open #hamburger span{width:0}
 #nav-toggle.open #hamburger span:nth-child(1){-webkit-transition-delay:0s;transition-delay:0s}
-#nav-toggle.open #hamburger span:nth-child(2){-webkit-transition-delay:.125s;transition-delay:.125s}
-#nav-toggle.open #hamburger span:nth-child(3){-webkit-transition-delay:.25s;transition-delay:.25s}
-#nav-toggle.open #cross span:nth-child(1){height:100%;-webkit-transition-delay:.625s;transition-delay:.625s}
-#nav-toggle.open #cross span:nth-child(2){width:100%;-webkit-transition-delay:.375s;transition-delay:.375s}
+#nav-toggle.open #hamburger span:nth-child(2){-webkit-transition-delay:.22s;transition-delay:.22s}
+#nav-toggle.open #hamburger span:nth-child(3){-webkit-transition-delay:.18s;transition-delay:.18s}
+#nav-toggle.open #cross span:nth-child(1){height:100%;-webkit-transition-delay:.28s;transition-delay:.28s}
+#nav-toggle.open #cross span:nth-child(2){width:100%;-webkit-transition-delay:.45s;transition-delay:.45s}
 html{font-size:16px}
 h1,h2,h3,h4,h5,h6,label{font-family:"Open Sans",sans-serif;color:rgba(0,0,0,0.84);letter-spacing:0;font-weight:700;font-style:normal;word-break:break-word;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1{font-size:2.2rem;margin:2.4rem 0 .31rem 0;line-height:1.2em}
@@ -152,7 +152,8 @@ header nav{width:100%}
 header li{display:block;width:100%;text-align:center;padding:1.5rem 0}
 header li a{font-size:1.4rem}
 #nav-toggle{display:block}
-#nav-menu{-webkit-transform:translateX(0) translateY(-300px);transform:translateX(0) translateY(-300px);-webkit-transition:1000ms all ease-in-out;transition:1000ms all ease-in-out;height:0}
+#nav-menu{-webkit-transform:translateX(0) translateY(-300px);transform:translateX(0) translateY(-300px);-webkit-transition:400ms all ease-in-out;transition:400ms all ease-in-out;height:0;padding-top:30px}
+#nav-menu li a{font-size:1.8rem}
 #nav-menu.nav-open{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);height:100vh}
 .brand-header:before{content:'';position:absolute;background-color:white;height:60px;width:100vw;top:0;left:0;z-index:998}
 html{font-size:14px}
