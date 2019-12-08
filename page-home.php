@@ -22,7 +22,6 @@ get_header();
                 <a href="#">Get Started </a>
             </div>
             <div class="hero-img">
-
             </div>
              </div>
     </section>
