@@ -1,7 +1,9 @@
 .admin-bar header { top: 32px }
 
+body {
+	position: relative;
+}
 header {
-	background: white;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -36,19 +38,39 @@ header {
 
 #nav-menu {
 	text-align: right;
-	transform: translateX(420px);
-	transition: 500ms all ease-in-out;
-	opacity: 0;
+	margin-right: 42px;
+	width: 100%;
+	z-index: 998;
+	overflow: hidden;
 
 	ul {
+		opacity: 0;
+		transition: 500ms all ease-in-out;
+		transform: translateX(240px);
 		list-style-type: none;
 		padding: 0;
 	}
 
 	li {
 		border-bottom: none;
+		position: relative;
 		display: inline-block;
+		&:before {
+			transition: 350ms width ease;
+			z-index: -1;
+			content: '';
+			height: 9px;
+			width: 0%;
+			background-color: darken($blue,10);
+			bottom: 4px;
+			right: 4%;
+			position: absolute;
+		}
 	}
+
+	li:hover:before {
+		width: 50%;
+}
 
 	li a {
 		font-family: "Open Sans", sans-serif;
@@ -58,13 +80,8 @@ header {
 		transition: 250ms all ease;
 		color: rgba(0, 0, 0, 0.65);
 		font-size: 1rem;
-		cursor: pointer;
 	}
 
-	li:hover a {
-		color: $brand;
-		cursor: pointer;
-	}
 }
 
 #nav-toggle {
@@ -78,16 +95,6 @@ header {
 	bottom: 0;
 	cursor: pointer;
 	opacity: 0.8;
-
-	&:before {
-		content: '';
-		position: absolute;
-		background-color: $white;
-		height: 60px;
-		width: 60px;
-		top: -10px;
-		right: -25px;
-	}
 
 	&:hover {
 		opacity: 1;
@@ -143,9 +150,10 @@ header {
 	}
 }
 
-#nav-menu.nav-open {
+#nav-menu ul.nav-open {
 	opacity: 1;
-	transform: translateX(-60px);
+	transform: translateX(0);
+	width: 100%;
 }
 
 #nav-toggle.open {
@@ -182,9 +190,19 @@ header {
 /* Mobile */
 
 @media all and (max-width: 720px) {
+
+	.header-logo { 
+		position: absolute;
+		top: 68px;
+		left: 15px;
+	}
   
 	header {
-		padding: 5px 10px;
+		z-index: 10;
+		transition: 400ms all ease-in-out;
+		overflow: visible;
+		margin-top: -60px;
+		background-image: url(../img/squiggle.png);
 		.container {
 			flex-direction: column;
 			align-items: flex-start;
@@ -193,44 +211,58 @@ header {
 
 	header nav { width: 100% }
 
-	header li {
+	#nav-menu li {
 		display: block;
 		width: 100%;
 		text-align: center;
 		padding: 1.5rem 0;
-	}
-
-	header li a {font-size: 1.4rem}
-
-	#nav-toggle {
-		margin: 13px 20px 0 0;
-	}
-
-	#nav-menu {
-		transform: translateX(0) translateY(-300px);
-		transition: 400ms all ease-in-out;
-		height: 0vh;
-		padding-top: 30px;
-		li a {
-			font-size: 1.8rem;
+		&:hover:before {
+			width: 0;
 		}
 	}
 
-	#nav-menu.nav-open {
-		opacity: 1;
-		transform: translateY(0px);
-		height: 100vh;
+	#nav-menu li a {
+		font-size: 1.4rem;
+		padding: 0 3rem;
+		position: relative;
+
+		&:before {
+			transition: 350ms width ease;
+			z-index: -1;
+			content: '';
+			height: 14px;
+			width: 0%;
+			background-color: darken($pink,10);
+			bottom: 0;
+			right: 4%;
+			position: absolute;
+		}
+
+		&:hover:before {
+			width: 50%;
+		}
 	}
 
-	.brand-header:before {
-		content: '';
-		position: absolute;
-		background-color: white;
-		height: 60px;
-		width: 100vw;
-		top: 0px;
-		left: 0px;
-		z-index: 998;
+	#nav-toggle { margin: 73px 20px 0 0 }
+
+	#nav-menu {
+		height: 0vh;
+		transition: 400ms all ease-in-out;
+		ul {
+			padding-top: 100px;
+			transition: 400ms all ease-in-out;
+			transform: translateX(0) translateY(-300px);
+		}
+		li a { font-size: 1.8rem }
 	}
+
+	#nav-menu.nav-open {
+		height: 104vh;
+		ul { 
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	}
+
 	   
 }
