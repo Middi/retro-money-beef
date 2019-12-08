@@ -1,28 +1,97 @@
 .hero {
     background-image: url('../img/squiggle.png');
     width: 100%;
-    height: 600px;
+    height: 1600px;
     position: relative;
     overflow: hidden;
+    .container {
+      align-items: center;
+      margin-top: 200px;
+      padding: 15px;
+      height: 400px;
+      // border: 2px solid red;
+    }
+    &-text {
+      width: 50%;
+      h1 {
+        font-size: 2.7rem;
+        margin-top: 0;
+        font-family:'Libre Baskerville', serif;
+      }
+      p {
+        font-family:'Open Sans', sans-serif;
+        padding: 0 0 10px 0;
+      }
+      a {
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+        transition: 250ms all ease;
+        &:before {
+          z-index: -1;
+          content: '';
+          height: 9px;
+          width: 80%;
+          transition: 250ms all ease;
+          background-color: darken($blue,6);
+          bottom: 1px;
+          right: -5%;
+          position: absolute;
+        }
+        &:after {
+          content: " →";
+          top: 0;
+          right: 0;
+        }
+        &:hover {
+          color: black;
+          &:before {
+            right: -12%;
+          }
+        }
+      }
+    }
+    &-img {
+      width: 50%;
+      background-image: url('../img/hero-img.png');
+      background-size: contain;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    
 }
 
 
 .blob {
     position: absolute;
     top: 0;
-    right: 0;
     fill: #023f92;
-    width: 50vmax;
-    z-index: 1;
-    animation: move 100s ease-in-out infinite;
+    right: -200px;
+    width: 100vw;
+    animation: moveLarge 20s ease-in-out infinite alternate;
     transform-origin: 50% 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
   
 @keyframes move {
-    0%   { transform: scale(1)   translate(10px, -30px); }
-    38%  { transform: scale(0.8, 1) translate(80px, 30px) rotate(20deg); }
-    40%  { transform: scale(0.8, 1) translate(80px, 30px) rotate(20deg); }
-    78%  { transform: scale(1.1) translate(0px, 50px) rotate(-20deg); }
-    80%  { transform: scale(1.1) translate(0px, 50px) rotate(-20deg); }
-    100% { transform: scale(1)   translate(10px, -30px); }
+  0%   { transform: scale(.6)   translate(50px, -370px); }
+  100% { transform: scale(.8)   translate(10px, -70px) rotate(-20deg); }
+}
+
+@keyframes moveLarge {
+    0%   { transform: scale(.9)   translate(50px, -100px); }
+    100% { transform: scale(1)   translate(10px, -70px) rotate(-20deg); }
   }
+
+
+@media all and (max-width: 1200px) {
+
+  .blob {
+    right: -200px;
+    animation: move 100s ease-in-out infinite;
+  }
+}

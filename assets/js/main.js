@@ -12,6 +12,5 @@ navToggle.addEventListener('click', function (e) {
     navMenuUl.classList.toggle('nav-open');
   } else {
     navMenu.classList.toggle('nav-open');
-    contNav.classList.toggle('cont-nav-open');
   }
 });

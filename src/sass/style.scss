@@ -21,4 +21,9 @@ html, body, main, #page {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
 }

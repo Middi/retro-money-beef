@@ -28,17 +28,21 @@
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'vintage-cash-cow'); ?></a>
         
 <div class="wrapper">
-<header class="cont-nav">
   <div class="container">
+
     <div id="logo" class="brand-header menuUp">
 
-<a href="<?php echo get_home_url(); ?>">
-      <img srcset="
-      <?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/nav-logo.png 273w,
-      <?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/nav-logo@2x.png 546w
-					"
-				src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/nav-logo.png"  class="header-logo" alt="Header logo">
-</a>
+      <a href="<?php echo get_home_url(); ?>">
+            <img srcset="
+            <?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/nav-logo.png 273w,
+            <?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/nav-logo@2x.png 546w
+                "
+              src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/nav-logo.png"  class="header-logo" alt="Header logo">
+      </a>
+
+    </div>
+
+    
       
       <div id="nav-toggle">
         <div id="hamburger">
@@ -51,7 +55,6 @@
           <span></span>
         </div>
       </div>
-    </div>
     <?php
 					wp_nav_menu( array(
 						'theme_location'	=> 'header-menu',
@@ -61,5 +64,4 @@
 						'menu_class'		=> 'nav-ul',
 					));
 				?>
-  </div>
-</header>
+</div>
