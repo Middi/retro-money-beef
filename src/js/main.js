@@ -8,10 +8,17 @@ navToggle.addEventListener('click', function (e) {
 	this.classList.toggle('open');
 
     if (document.body.clientWidth > 720) {
-	navMenuUl.classList.toggle('nav-open');
+		navMenuUl.classList.toggle('nav-open');
 	}
-	else { 
-		navMenu.classList.toggle('nav-open');
-	}
+	else navMenu.classList.toggle('nav-open');
 });
-		
+
+	jQuery('#user-form').ajaxForm({
+		success: function(res) {
+			console.log(res)
+		},
+		error: function(res) {
+			console.log(res)
+		},
+		resetForm: true
+	});
