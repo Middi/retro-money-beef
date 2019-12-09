@@ -101,7 +101,7 @@ body{position:relative}
 .hero-text{width:50%}
 .hero-text h1{font-size:3rem;margin-top:0;font-family:'Libre Baskerville',serif}
 .hero-text p{font-family:'Open Sans',sans-serif;margin:15px 0 35px 0;font-size:1.2rem}
-.hero-text a{text-decoration:none;position:relative;z-index:1;font-weight:700;-webkit-transition:250ms all ease;transition:250ms all ease}
+.hero-text a{text-decoration:none;position:relative;z-index:0;font-weight:700;-webkit-transition:250ms all ease;transition:250ms all ease}
 .hero-text a:before{z-index:-1;content:'';height:9px;width:80%;-webkit-transition:250ms all ease;transition:250ms all ease;background-color:#c6e4f7;bottom:1px;right:-5%;position:absolute}
 .hero-text a:after{content:" →";top:0;right:0}
 .hero-text a:hover{color:black}
