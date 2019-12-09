@@ -70,7 +70,6 @@ blockquote cite{font-family:'Libre Baskerville',serif;color:#21759b}
 small span{font-size:1rem;line-height:1}
 pre{white-space:pre-wrap;word-break:break-word;word-wrap:break-word;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}
 .admin-bar header{top:32px}
-body{position:relative}
 .header-logo{position:absolute;top:10px;left:0;height:40px;z-index:999}
 #nav-menu{z-index:998;position:absolute;top:0;right:0}
 #nav-menu ul{-webkit-transition:500ms all ease-in-out;transition:500ms all ease-in-out;list-style-type:none;padding:0}
