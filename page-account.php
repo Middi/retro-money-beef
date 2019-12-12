@@ -11,8 +11,9 @@ get_header();
 ?>
 <main class="mt">
     <?php 
-        $user_info = wp_get_current_user();
-        $user_meta = get_user_meta($user_info->ID);
+        $user_id = $_GET['customer'];
+        $user_info = get_userdata($user_id);
+        $user_meta = get_user_meta($user_id);
         $user_name = $user_info->display_name;
         $user_email = $user_info->user_email;
     ?>
@@ -23,8 +24,8 @@ get_header();
 <form id="user-form" enctype="multipart/form-data" method="POST" action="<?php echo admin_url('admin-ajax.php'); ?>">
     <h3><?php echo $user_name ?></h3>
     <h3><?php echo $user_email ?></h3>
-    <h3><?php echo $user_meta['user_address'][0] ?></h3>
-    <input type="text" name="user_address" placeholder="Address" value="" />
+    <input type="text" name="user_address" placeholder="Address" value=<?php echo $user_meta['user_address'][0] ?> />
+    <input type="hidden" name="id" value=<?php echo $user_id; ?> />
     <input type="hidden" name="action" value="update_customer" />
     <input type="submit" value="Submit" />
     
