@@ -54,4 +54,3 @@ require get_template_directory() . '/functions/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/functions/jetpack.php';
 }
-

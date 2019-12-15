@@ -23,13 +23,14 @@ get_header();
 
 <form id="user-form" enctype="multipart/form-data" method="POST" action="<?php echo admin_url('admin-ajax.php'); ?>">
     
-    <input type="text" name="user_name" placeholder="Username" />
-    <input type="email" name="user_email" placeholder="Email"  />
+    <input type="text" name="first_name" placeholder="First Name" required />
+    <input type="text" name="last_name" placeholder="Last Name" required/>
+    <input type="email" name="user_email" placeholder="Email"  required/>
+    <input type="password" name="pass1" placeholder="Password" required style="width:250px; margin-bottom:3px;"><br />
+    <input type="password" name="pass2" placeholder="Confirm Password" required style="width:250px; margin-bottom:3px;"><br />
     
     <input type="hidden" name="action" value="create_customer" />
     <input type="submit" value="Submit" />
-    <!-- <input type="text" name="user_address" placeholder="Address" value="" /> -->
-    <!-- <input type="password" name="password" placeholder="password" /> -->
     
 </form>
 <?php else : ?>
