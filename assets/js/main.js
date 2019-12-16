@@ -19,12 +19,13 @@ if (navToggle) {
 jQuery('#user-form').ajaxForm({
   success: function success(res) {
     console.log(res);
+    jQuery('.notice').html(res);
     jQuery('.notice').fadeIn();
     setTimeout(function () {
       jQuery('.notice').fadeOut();
     }, 2000);
   },
   error: function error(res) {
-    console.log(res);
+    console.log('nhh', res);
   }
 });
