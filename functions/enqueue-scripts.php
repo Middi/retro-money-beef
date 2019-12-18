@@ -29,14 +29,8 @@ function retro_money_beef_scripts() {
 add_action( 'wp_enqueue_scripts', 'retro_money_beef_scripts' );
 
 
-
 function my_enqueue2($hook) {
-    if (!is_admin()) {
         wp_enqueue_script('custom_script', get_bloginfo('template_url').'/assets/js/main.min.js', array('jquery', 'jquery-form'));
-    }
-    if(is_admin()){
-        wp_enqueue_script('custom_admin_script', get_bloginfo('template_url').'/assets/js/main.min.js', array('jquery', 'jquery-form'));
-    }  
 }
  
 add_action('admin_enqueue_scripts', 'my_enqueue2');
