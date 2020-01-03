@@ -17,14 +17,14 @@ if(navToggle) {
 
 	jQuery('#user-form').ajaxForm({
 		success: function(res) {
-			console.log(res);
 			jQuery('.notice').html(res);
 
 			jQuery('.notice').fadeIn();
 			setTimeout(function(){
 				jQuery('.notice').fadeOut();
 			  	}, 2000);
-			},
+			}
+			,
 		error: function(res) {
 			console.log('nhh', res)
 		}
