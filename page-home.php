@@ -12,13 +12,13 @@ get_header();
 
 <main>
     <div class="bg-squiggle">
-
         <?php get_template_part('template-parts/content', 'hero'); ?>
         <?php get_template_part('template-parts/content', 'about'); ?>
-
     </div>
-    
-    <h1>Hello home page</h1>
+
+        <?php get_template_part('template-parts/content', 'egobar'); ?>
+
+    <!-- <h1>Hello home page</h1>
 
     <?php while ( have_posts() ) : the_post();?>
     <form id="user-form" enctype="multipart/form-data" method="POST" action="<?php echo admin_url('admin-ajax.php'); ?>">
@@ -26,6 +26,6 @@ get_header();
         <input type="text" name="last_name" placeholder="Last Name" />
         <input type="email" name="email_name" placeholder="email" />
     </form>
-    <?php endwhile ?>
+    <?php endwhile ?> -->
 </main>
 <?php get_footer();

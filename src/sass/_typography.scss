@@ -62,13 +62,30 @@ h6 {
 }
 .display-p {
     font-family:'Open Sans', sans-serif;
-    margin: 15px 0 35px 0;
-    font-size: 1rem;
+    margin: 15px 0 15px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 .h1-title {
     font-size: 3rem;
     display: inline;
+}
+
+.h1-underline {
+    position: relative;
+    z-index: 1;
+    &:before {
+        z-index: -1;
+        content: '';
+        height: 20px;
+        width: 70%;
+        transition: 250ms all ease;
+        background-color: darken($blue,6);
+        bottom: 1px;
+        right: 10%;
+        position: absolute;
+      }
 }
 
 .page-title {

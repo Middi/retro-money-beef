@@ -1,6 +1,5 @@
 .about {
     width: 100%;
-    // height: 1600px;
     position: relative;
     .container {
       align-items: center;
@@ -8,42 +7,12 @@
       padding: 15px;
       height: 400px;
       max-width: 1100px;
-      // border: 2px solid red;
     }
     &-text {
-      width: 50%;
-      a {
-        text-decoration: none;
-        position: relative;
-        z-index: 0;
-        font-weight: 700;
-        transition: 250ms all ease;
-        &:before {
-          z-index: -1;
-          content: '';
-          height: 9px;
-          width: 80%;
-          transition: 250ms all ease;
-          background-color: darken($blue,6);
-          bottom: 1px;
-          right: -5%;
-          position: absolute;
-        }
-        &:after {
-          content: " →";
-          top: 0;
-          right: 0;
-        }
-        &:hover {
-          color: black;
-          &:before {
-            right: -12%;
-          }
-        }
-      }
+      width: 45%;
     }
     &-img {
-      width: 50%;
+      width: 52%;
       background-image: url('../img/about-img.png');
       background-size: contain;
       height: 500px;

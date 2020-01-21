@@ -10,6 +10,7 @@
 @import 'nav';
 @import 'hero';
 @import 'about';
+@import 'egobar';
 @import 'blog';
 @import 'cards';
 @import 'footer';
@@ -33,4 +34,8 @@ html, body, main, #page {
 .bg-squiggle {
     background-image: url('../img/squiggle.png');
     overflow: hidden;
+}
+
+.underline-green:before {
+    background-color: $green;
 }
