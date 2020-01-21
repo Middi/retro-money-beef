@@ -6,8 +6,10 @@
 @import 'wordpress';
 @import 'colors';
 @import 'typography';
+@import 'buttons';
 @import 'nav';
 @import 'hero';
+@import 'about';
 @import 'blog';
 @import 'cards';
 @import 'footer';
@@ -26,4 +28,9 @@ html, body, main, #page {
 
 .flex {
     display: flex;
+}
+
+.bg-squiggle {
+    background-image: url('../img/squiggle.png');
+    overflow: hidden;
 }

@@ -1,5 +1,6 @@
-.hero {
+.about {
     width: 100%;
+    // height: 1600px;
     position: relative;
     .container {
       align-items: center;
@@ -8,7 +9,6 @@
       height: 400px;
       max-width: 1100px;
       // border: 2px solid red;
-      z-index: 1;
     }
     &-text {
       width: 50%;
@@ -44,42 +44,43 @@
     }
     &-img {
       width: 50%;
-      background-image: url('../img/hero-img.png');
+      background-image: url('../img/about-img.png');
       background-size: contain;
-      height: 400px;
+      height: 500px;
       background-repeat: no-repeat;
-      background-position: center right;
+      background-position: center left;
     }
     
 }
 
 
-.blob {
+.about-blob {
     position: absolute;
-    top: -400px;
-    right: -400px;
+    top: 0px;
+    left: -800px;
     width: 90vw;
-    animation: moveLarge 20s ease-in-out infinite alternate;
-    transform-origin: 0% 50%;
+    animation: aboutMoveLarge 2s ease-in-out infinite alternate;
+    // transform-origin: 50% 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    z-index: 0;
   }
   
-@keyframes move {
-  0%   { transform: scale(.6)   translate(50px, -370px); }
+@keyframes aboutMove {
+  0%   { transform: scale(.6)   translate(0px, -370px); }
   100% { transform: scale(.8)   translate(10px, -70px) rotate(-20deg); }
 }
 
-@keyframes moveLarge {
-    0%   { transform: scale(.9)   translate(10px, 0px); }
-    100% { transform: scale(1)   translate(15px, 50px) rotate(-20deg); }
-  }
+// @keyframes aboutMoveLarge {
+//     0%   { transform: scale(.9)  }
+//     100% { transform: scale(1) rotate(-20deg); }
+//   }
 
 
 // @media all and (max-width: 1200px) {
 
-//   .blob {
+//   .about-blob {
 //     right: -200px;
 //     animation: move 100s ease-in-out infinite;
 //   }
