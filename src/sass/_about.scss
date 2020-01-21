@@ -4,7 +4,7 @@
     .container {
       align-items: center;
       margin-top: 120px;
-      padding: 15px;
+      padding: 15px 15px 90px 15px;
       height: 400px;
       max-width: 1100px;
     }
@@ -25,9 +25,10 @@
 
 .about-blob {
     position: absolute;
-    top: 0px;
-    left: -800px;
-    width: 90vw;
+    top: -120px;
+    left: -870px;
+    width: 100vw;
+    transform: scale(.82);
     animation: aboutMoveLarge 2s ease-in-out infinite alternate;
     // transform-origin: 50% 50%;
     display: flex;

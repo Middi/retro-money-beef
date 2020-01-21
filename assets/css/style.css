@@ -53,11 +53,14 @@ h4{font-size:1.25rem;margin:2.4rem 0 -0.7rem 0}
 h5{font-size:1rem;margin:2.4rem 0 -0.7rem 0}
 h6{font-size:.8rem;margin:2.4rem 0 -0.7rem 0}
 .display-h1{font-size:3rem;margin-top:0;font-family:'Libre Baskerville',serif}
+.display-h3{font-family:'Libre Baskerville',serif;margin:15px 0 35px 0;font-size:1.2rem;font-weight:700}
 .display-h4{font-family:'Open Sans',sans-serif;margin:15px 0 35px 0;font-size:1.2rem;font-weight:200}
 .display-p{font-family:'Open Sans',sans-serif;margin:15px 0 15px 0;font-size:1.1rem;line-height:1.5rem}
 .h1-title{font-size:3rem;display:inline}
 .h1-underline{position:relative;z-index:1}
 .h1-underline:before{z-index:-1;content:'';height:20px;width:70%;-webkit-transition:250ms all ease;transition:250ms all ease;background-color:#c6e4f7;bottom:1px;right:10%;position:absolute}
+.h3-underline{position:relative;z-index:1}
+.h3-underline:before{z-index:-1;content:'';height:12px;width:180px;-webkit-transition:250ms all ease;transition:250ms all ease;background-color:#c6e4f7;bottom:-3px;left:50%;position:absolute}
 .page-title{padding:20px;text-align:center}
 a{text-decoration:underline}
 p,a,li,textarea{color:#2c2b2d;font-family:'Libre Baskerville',serif;font-size:1.1rem;letter-spacing:-0.003rem;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.7}
@@ -116,12 +119,12 @@ pre{white-space:pre-wrap;word-break:break-word;word-wrap:break-word;-webkit-hyph
 .blob{position:absolute;top:-400px;right:-400px;width:90vw;-webkit-animation:moveLarge 20s ease-in-out infinite alternate;animation:moveLarge 20s ease-in-out infinite alternate;-webkit-transform-origin:0 50%;transform-origin:0 50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
 .mt{padding-top:200px}
 .about{width:100%;position:relative}
-.about .container{-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:120px;padding:15px;height:400px;max-width:1100px}
+.about .container{-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:120px;padding:15px 15px 90px 15px;height:400px;max-width:1100px}
 .about-text{width:45%}
 .about-img{width:52%;background-image:url("../img/about-img.png");background-size:contain;height:500px;background-repeat:no-repeat;background-position:center left}
-.about-blob{position:absolute;top:0;left:-800px;width:90vw;-webkit-animation:aboutMoveLarge 2s ease-in-out infinite alternate;animation:aboutMoveLarge 2s ease-in-out infinite alternate;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;z-index:0}
+.about-blob{position:absolute;top:-120px;left:-870px;width:100vw;-webkit-transform:scale(0.82);transform:scale(0.82);-webkit-animation:aboutMoveLarge 2s ease-in-out infinite alternate;animation:aboutMoveLarge 2s ease-in-out infinite alternate;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;z-index:0}
 .mt{padding-top:200px}
-.egobar{height:200px;width:100%;border:1px solid red}
+.egobar{height:200px;width:100%;overflow:hidden;position:relative;background-color:#fcfcfc}
 .carousel{position:absolute;left:0;overflow:hidden;width:4210px;opacity:.65}
 .bg-wrapper{height:100%;margin-top:49px}
 .article-container{max-width:680px;margin:0 auto;padding:0 20px 140px;display:block;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
@@ -168,6 +171,7 @@ html,body,main,#page{height:100%;background-color:#fefefe}
 .flex{display:-webkit-box;display:-ms-flexbox;display:flex}
 .bg-squiggle{background-image:url("../img/squiggle.png");overflow:hidden}
 .underline-green:before{background-color:#c2e5d6}
+.underline-pink:before{background-color:#fee4db}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media(max-width:861px){.logo{height:23px;margin-bottom:6px}

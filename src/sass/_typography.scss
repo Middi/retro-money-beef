@@ -54,12 +54,21 @@ h6 {
     font-family:'Libre Baskerville', serif;
 }
 
+
+.display-h3 {
+    font-family:'Libre Baskerville', serif;
+    margin: 15px 0 35px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .display-h4 {
     font-family:'Open Sans', sans-serif;
     margin: 15px 0 35px 0;
     font-size: 1.2rem;
     font-weight: 200;
 }
+
 .display-p {
     font-family:'Open Sans', sans-serif;
     margin: 15px 0 15px 0;
@@ -84,6 +93,23 @@ h6 {
         background-color: darken($blue,6);
         bottom: 1px;
         right: 10%;
+        position: absolute;
+      }
+}
+
+
+.h3-underline {
+    position: relative;
+    z-index: 1;
+    &:before {
+        z-index: -1;
+        content: '';
+        height: 12px;
+        width: 180px;
+        transition: 250ms all ease;
+        background-color: darken($blue,6);
+        bottom: -3px;
+        left: 50%;
         position: absolute;
       }
 }

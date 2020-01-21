@@ -16,7 +16,8 @@ get_header();
         <?php get_template_part('template-parts/content', 'about'); ?>
     </div>
 
-        <?php get_template_part('template-parts/content', 'egobar'); ?>
+    <?php get_template_part('template-parts/content', 'egobar'); ?>
+    <?php get_template_part('template-parts/content', 'how-it-works'); ?>
 
     <!-- <h1>Hello home page</h1>
 
