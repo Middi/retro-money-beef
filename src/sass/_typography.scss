@@ -84,6 +84,7 @@ h6 {
 .h1-underline {
     position: relative;
     z-index: 1;
+    display: inline;
     &:before {
         z-index: -1;
         content: '';
@@ -92,7 +93,7 @@ h6 {
         transition: 250ms all ease;
         background-color: darken($blue,6);
         bottom: 1px;
-        right: 10%;
+        right: -10%;
         position: absolute;
       }
 }
@@ -101,11 +102,12 @@ h6 {
 .h3-underline {
     position: relative;
     z-index: 1;
+    display: inline;
     &:before {
         z-index: -1;
         content: '';
         height: 12px;
-        width: 180px;
+        width: 70%;
         transition: 250ms all ease;
         background-color: darken($blue,6);
         bottom: -3px;

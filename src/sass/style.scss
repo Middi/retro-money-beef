@@ -11,6 +11,7 @@
 @import 'hero';
 @import 'about';
 @import 'egobar';
+@import 'hiw';
 @import 'blog';
 @import 'cards';
 @import 'footer';
@@ -36,6 +37,10 @@ html, body, main, #page {
     overflow: hidden;
 }
 
+.title-container {
+    text-align: center;
+}
+
 .underline-green:before {
     background-color: $green;
 }
@@ -43,4 +48,8 @@ html, body, main, #page {
 
 .underline-pink:before {
     background-color: $pink;
+}
+
+.underline-yellow:before {
+    background-color: $yellow;
 }

@@ -1,0 +1,25 @@
+.how-it-works {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    height: 1000px;
+}
+.blob-3 {
+    position: absolute;
+    top: -20px;
+    right: -240px;
+    width: 100vw;
+    transform: scale(.82);
+    // animation: aboutMoveLarge 2s ease-in-out infinite alternate;
+    // transform-origin: 50% 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 0;
+  }
+  
+@keyframes aboutMove {
+  0%   { transform: scale(.6)   translate(0px, -370px); }
+  100% { transform: scale(.8)   translate(10px, -70px) rotate(-20deg); }
+}
