@@ -1,3 +1,20 @@
+@import 'normalise';
+@import 'wordpress';
+@import 'colors';
+@import 'nav';
+@import 'footer';
+
+
+html, body, main, #page {
+    height: 100%;
+    background-color: $white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
 /*=============================================
 =                  TYPOGRAPHY                 =
 =============================================*/
@@ -5,7 +22,7 @@
 html { font-size: 16px }
 
 h1, h2, h3, h4, h5, h6, label {
-    font-family:'Libre Baskerville', serif;
+    font-family: "Open Sans", sans-serif;
     color: $black;
     letter-spacing: 0;
     font-weight: 700;
@@ -18,8 +35,8 @@ h1, h2, h3, h4, h5, h6, label {
 }
 
 h1 {
-    font-size: 3rem;
-    margin: 0 0 0.31rem 0;
+    font-size: 2.2rem;
+    margin: 2.4rem 0 0.31rem 0;
     line-height: 1.2em;
 }
 
@@ -48,70 +65,13 @@ h6 {
     margin: 2.4rem 0 -0.7rem 0;
 }
 
-
-.display-h3 {
-    font-family:'Libre Baskerville', serif;
-    margin: 15px 0 35px 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.display-h4 {
-    font-family:'Open Sans', sans-serif;
-    margin: 15px 0 35px 0;
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-
-.display-p {
-    font-family:'Open Sans', sans-serif;
-    margin: 15px 0 15px 0;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-}
-
 .h1-title {
     font-size: 3rem;
     display: inline;
 }
 
-.h1-underline {
-    position: relative;
-    z-index: 1;
-    display: inline;
-    &:before {
-        z-index: -1;
-        content: '';
-        height: 20px;
-        width: 70%;
-        transition: 250ms all ease;
-        background-color: darken($blue,6);
-        bottom: 1px;
-        right: -10%;
-        position: absolute;
-      }
-}
 
-
-.h3-underline {
-    position: relative;
-    z-index: 1;
-    display: inline;
-    &:before {
-        z-index: -1;
-        content: '';
-        height: 12px;
-        width: 70%;
-        transition: 250ms all ease;
-        background-color: darken($blue,6);
-        bottom: -3px;
-        left: 50%;
-        position: absolute;
-      }
-}
-
-.page-title {
-    padding: 20px;
+.title-container {
     text-align: center;
 }
 
@@ -207,5 +167,83 @@ blockquote {
 }
 @media all and (max-width: 450px) {
     ol, ul { padding-left: 30px }
+ }
+ 
+
+ .bg-wrapper {
+    height: 100%;
+    margin-top: 49px;
+}
+
+.article-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 140px;
+    display: block;
+    hyphens: auto;
+
+    .title {padding: 30px 0 10px}
+
+    a {word-break: break-all}
+    figure {
+        margin: 0;
+        margin-bottom: 8px;
+        width: 100%;
+        border: 1px solid lighten($black, 80);
+        padding-bottom: 56.25%;
+    }
+    ol {padding-left: 48px}
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        border: 1px solid lighten($black, 80);
+    }
+    .view-buttons-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 40px;
+    a {
+        margin: 0;
+    }
+    img {
+        padding-right: 10px;
+        border-radius: 20px;
+    }
+    &-info {
+        padding-top: 2px;
+    }
+}
+
+.other-articles .card-container {
+    padding: 80px 0 20px;
+    .card {opacity: 1}
+}
+
+.ct-mg {
+    margin-top: 70px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container .avatar {
+    border: none;
+}
+
+
+@media all and (max-width: 450px) {
+    .article-container {
+        padding: 0 15px 140px;
+    }
  }
  

@@ -21,7 +21,7 @@ if ( ! function_exists( 'retro_money_beef_setup' ) ) :
 
 		add_theme_support( 'editor-styles' );
 		
-		add_editor_style( '/assets/css/style.css' );
+		add_editor_style( '/assets/css/posts.css' );
 		
 		function register_my_menu() {
 			register_nav_menu('header-menu','Header Menu');

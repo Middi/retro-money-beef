@@ -7,6 +7,8 @@
 
 	"styleSRC": "./src/sass/style.scss", 
 	"styleDestination": "./assets/css", 
+	"blogStyleSRC": "./src/sass/posts.scss", 
+	"blogStyleDestination": "./assets/css", 
 	"outputStyle": "compact", 
 	"errLogToConsole": true,
 	"precision": 10,

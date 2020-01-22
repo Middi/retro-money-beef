@@ -44,17 +44,21 @@ jQuery('#user-form').ajaxForm({
 // 	jQuery('#acf-field_5df80db3d9ca0').val(getUrlParameter('customer'));
 // });
 
-var carousel = jQuery('#carousel');
-var image = jQuery('#ego-2');
-var i = 0;
+if(jQuery('#carousel').length > 0) {
 
-setInterval(swap, 30);
-
-function swap() {
-  carousel.css('left', i);
-  i--;
-  var imagePosition = image.offset();
-  if(imagePosition.left < 0) {
-      i = -1;
+  var carousel = jQuery('#carousel');
+  var image = jQuery('#ego-2');
+  var i = 0;
+  
+  setInterval(swap, 30);
+  
+  function swap() {
+    carousel.css('left', i);
+    i--;
+    var imagePosition = image.offset();
+    if(imagePosition.left < 0) {
+        i = -1;
+    }
   }
+  
 }
