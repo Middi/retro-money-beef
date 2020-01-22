@@ -45,26 +45,20 @@ embed,iframe,object{max-width:100%}
 .gallery-caption{display:block}
 .editor-post-title__input{font-family:"Open Sans",sans-serif;font-weight:700}
 html{font-size:16px}
-h1,h2,h3,h4,h5,h6,label{font-family:'Libre Baskerville',serif;color:#2c2b2d;letter-spacing:0;font-weight:700;font-style:normal;word-break:break-word;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+h1,h2,h3,h4,h5,h6,p,label,a,li,textarea{font-family:'Libre Baskerville',serif;color:#2c2b2d;letter-spacing:0;font-weight:700;font-style:normal;word-break:break-word;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1{font-size:3rem;margin:0 0 .31rem 0;line-height:1.2em}
 h2{font-size:1.75rem;margin:2.4rem 0 .31rem 0}
-h3{font-size:1.45rem;margin:2.4rem 0 -0.5rem 0}
-h4{font-size:1.25rem;margin:2.4rem 0 -0.7rem 0}
+h3{margin:15px 0 35px 0;font-size:1.2rem}
 h5{font-size:1rem;margin:2.4rem 0 -0.7rem 0}
 h6{font-size:.8rem;margin:2.4rem 0 -0.7rem 0}
-.display-h3{font-family:'Libre Baskerville',serif;margin:15px 0 35px 0;font-size:1.2rem;font-weight:700}
-.display-h4{font-family:'Open Sans',sans-serif;margin:15px 0 35px 0;font-size:1.2rem;font-weight:200}
-.display-p{font-family:'Open Sans',sans-serif;margin:15px 0 15px 0;font-size:1.1rem;line-height:1.5rem}
+p{font-family:'Open Sans',sans-serif;margin:15px 0 25px 0;font-size:1.1rem;font-weight:200;line-height:1.7rem;letter-spacing:-0.003rem}
 .h1-title{font-size:3rem;display:inline}
 .h1-underline{position:relative;z-index:1;display:inline}
 .h1-underline:before{z-index:-1;content:'';height:20px;width:70%;-webkit-transition:250ms all ease;transition:250ms all ease;background-color:#c6e4f7;bottom:1px;right:-10%;position:absolute}
 .h3-underline{position:relative;z-index:1;display:inline}
 .h3-underline:before{z-index:-1;content:'';height:12px;width:70%;-webkit-transition:250ms all ease;transition:250ms all ease;background-color:#c6e4f7;bottom:-3px;left:50%;position:absolute}
-.page-title{padding:20px;text-align:center}
 a{text-decoration:underline}
-p,a,li,textarea{color:#2c2b2d;font-family:'Libre Baskerville',serif;font-size:1.1rem;letter-spacing:-0.003rem;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.7}
-p,a{margin:1.4rem 0 .4rem 0}
-a:hover{color:#79767b}
+a,li,textarea{font-size:1.1rem;letter-spacing:-0.003rem;line-height:1.7}
 strong{font-weight:700}
 em{font-style:italic}
 .small{font-size:1rem;color:#464447;margin:0;padding:0}

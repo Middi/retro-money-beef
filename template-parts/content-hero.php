@@ -25,8 +25,8 @@
     </div>
     <div class="container flex">
         <div class="hero-text">
-            <h1 class="display-h1">Sell your old stuff make some money.</h1>
-            <h4 class="display-h4">Signup now and turn your old items into cash.</p>
+            <h1>Sell your old stuff make some money.</h1>
+            <p>Signup now and turn your old items into cash.</p>
             <a href="#">Get Started </a>
         </div>
         <div class="hero-img">

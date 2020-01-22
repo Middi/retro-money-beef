@@ -4,7 +4,7 @@
 
 html { font-size: 16px }
 
-h1, h2, h3, h4, h5, h6, label {
+h1, h2, h3, h4, h5, h6, p, label, a, li, textarea {
     font-family:'Libre Baskerville', serif;
     color: $black;
     letter-spacing: 0;
@@ -29,14 +29,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.45rem;
-    margin: 2.4rem 0 -0.5rem 0;
+    margin: 15px 0 35px 0;
+    font-size: 1.2rem;
 }
 
-h4 {
-    font-size: 1.25rem;
-    margin: 2.4rem 0 -0.7rem 0;
-}
 
 h5 {
     font-size: 1rem;
@@ -48,27 +44,15 @@ h6 {
     margin: 2.4rem 0 -0.7rem 0;
 }
 
-
-.display-h3 {
-    font-family:'Libre Baskerville', serif;
-    margin: 15px 0 35px 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.display-h4 {
+p {
     font-family:'Open Sans', sans-serif;
-    margin: 15px 0 35px 0;
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-
-.display-p {
-    font-family:'Open Sans', sans-serif;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 25px 0;
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-weight: 200;
+    line-height: 1.7rem;
+    letter-spacing: -0.003rem;
 }
+
 
 .h1-title {
     font-size: 3rem;
@@ -92,7 +76,6 @@ h6 {
       }
 }
 
-
 .h3-underline {
     position: relative;
     z-index: 1;
@@ -110,27 +93,13 @@ h6 {
       }
 }
 
-.page-title {
-    padding: 20px;
-    text-align: center;
-}
-
 a { text-decoration: underline }
 
-p, a, li, textarea {
-    color: $black;
-    font-family: 'Libre Baskerville', serif;
+a, li, textarea {
     font-size: 1.1rem;
     letter-spacing: -0.003rem;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     line-height: 1.7;
 }
-
-p, a { margin: 1.4rem 0 0.4rem 0 }
-
-a:hover { color: lighten($black, 30) }
 
 strong { font-weight: 700 }
 
