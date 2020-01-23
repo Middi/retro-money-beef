@@ -1,13 +1,8 @@
-.about {
+.left-pic {
     width: 100%;
     position: relative;
-    .container {
-      align-items: center;
-      margin-top: 120px;
-      padding: 15px 15px 90px 15px;
-      height: 400px;
-      max-width: 1100px;
-    }
+		margin: 120px 0;
+  	z-index: 1;
     &-text {
       width: 45%;
     }
@@ -21,7 +16,6 @@
     }
     
 }
-
 
 .about-blob {
     position: absolute;
@@ -56,6 +50,8 @@
 //   }
 // }
 
-.mt {
-  padding-top: 200px;
+
+.car {
+  height: 400px;
+  background-image: url('../img/signup-img.png');
 }

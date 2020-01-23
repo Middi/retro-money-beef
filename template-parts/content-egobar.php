@@ -10,7 +10,7 @@
 ?>
 
 <section class="egobar">
-    <div class="title-container">
+    <div class="title-container-h3">
         <h3 class="display-h3 h3-underline underline-green">We've Been Featured On</h3>
     </div>
     <div class="carousel" id="carousel">

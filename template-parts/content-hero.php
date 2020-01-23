@@ -27,7 +27,7 @@
         <div class="hero-text">
             <h1>Sell your old stuff make some money.</h1>
             <p>Signup now and turn your old items into cash.</p>
-            <a href="#">Get Started </a>
+            <a class="arrow-link" href="#">Get Started </a>
         </div>
         <div class="hero-img">
         </div>

@@ -19,3 +19,38 @@
         background-color: lighten($black, 8);
     }
 }
+
+
+
+.arrow-link {
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    font-weight: 700;
+    transition: 250ms all ease;
+    &:before {
+      z-index: -1;
+      content: '';
+      height: 9px;
+      width: 80%;
+      transition: 250ms all ease;
+      background-color: darken($blue,6);
+      bottom: 1px;
+      right: -5%;
+      position: absolute;
+    }
+    &:after {
+      content: " →";
+      top: 0;
+      right: 0;
+    }
+    &:hover {
+      color: black;
+      &:before {
+        right: -12%;
+      }
+    }
+  }
+
+
+.arrow-link-pink:before { background-color: $pink }

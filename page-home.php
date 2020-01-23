@@ -18,6 +18,7 @@ get_header();
 
     <?php get_template_part('template-parts/content', 'egobar'); ?>
     <?php get_template_part('template-parts/content', 'how-it-works'); ?>
+    <?php get_template_part('template-parts/content', 'pack'); ?>
 
     <!-- <h1>Hello home page</h1>
 
@@ -28,5 +29,6 @@ get_header();
         <input type="email" name="email_name" placeholder="email" />
     </form>
     <?php endwhile ?> -->
+    
 </main>
 <?php get_footer();

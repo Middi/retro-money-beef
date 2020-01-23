@@ -1,46 +1,18 @@
+section{
+  width: 100%;
+  position: relative;
+}
+
+
+
 .hero {
-    width: 100%;
-    position: relative;
-    .container {
-      align-items: center;
-      margin-top: 120px;
-      padding: 15px;
-      height: 400px;
-      max-width: 1100px;
-      // border: 2px solid red;
-      z-index: 1;
-    }
+		margin: 120px 0;
+  	z-index: 1;
+  	.container {
+   		align-items: center;
+  	}
     &-text {
       width: 50%;
-      a {
-        text-decoration: none;
-        position: relative;
-        z-index: 0;
-        font-weight: 700;
-        transition: 250ms all ease;
-        &:before {
-          z-index: -1;
-          content: '';
-          height: 9px;
-          width: 80%;
-          transition: 250ms all ease;
-          background-color: darken($blue,6);
-          bottom: 1px;
-          right: -5%;
-          position: absolute;
-        }
-        &:after {
-          content: " →";
-          top: 0;
-          right: 0;
-        }
-        &:hover {
-          color: black;
-          &:before {
-            right: -12%;
-          }
-        }
-      }
     }
     &-img {
       width: 50%;
@@ -84,7 +56,3 @@
 //     animation: move 100s ease-in-out infinite;
 //   }
 // }
-
-.mt {
-  padding-top: 200px;
-}
