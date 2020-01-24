@@ -21,6 +21,11 @@ html, body, main, #page {
     background-color: $white;
 }
 
+section {
+  width: 100%;
+  position: relative;
+}
+
 .container, .container-nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,7 +34,6 @@ html, body, main, #page {
 }
 
 .container {
-
     padding: 60px 15px;
 }
 
@@ -41,6 +45,7 @@ html, body, main, #page {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .bg-squiggle {

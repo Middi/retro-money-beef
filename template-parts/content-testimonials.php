@@ -24,8 +24,14 @@
             <div class="card-inner">
                 <div class="card-text">
                     <p>Retro Money Beef are amazing! I’ve told so many people about them. Terrible name sure, but they were so good! The turn around was great and I got more money than I expected. Love it!</p>
-                    <p class="card-name">Lauren</p>
-                    <p class="card-location"><small>Leeds</small></p>
+                    
+                    <div class="card-details">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/lauren.jpg" alt="Testimonial image">
+                        <div class="card-details-text">
+                            <p class="card-name">Lauren</p>
+                            <p class="card-location"><small>Leeds</small></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-img">
                     <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/lauren.jpg" alt="Testimonial image">

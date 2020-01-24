@@ -59,16 +59,30 @@
         }
     }
 
+    &-details {
+        display: flex;
+        align-items: center;
+        img {
+            display: none;
+            height: 40px;
+            width: 40px;
+            margin-right: 8px;
+            border-radius: 40px;
+        }
+    }
+
     &-img img {
         height: 160px;
         width: 160px;
     }
 
     &-name {
-        font-family:'Libre Baskerville', serif;
-        font-weight: 700;
-        margin: 0;
-        line-height: 1;
+            font-family:'Libre Baskerville', serif;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+            display: inline;
+        
     }
 
     &-location {
@@ -97,4 +111,36 @@
     right: -300px;
     position: absolute;
     bottom: -400px;
+}
+
+
+
+@media all and (max-width: 500px) {
+
+    .card {
+        padding: 10px 20px 20px;
+        &:before {
+            display: none;
+        }
+        &:after {
+            left: auto;
+            right: 6px;
+            top: -70px;
+            transform: rotate(180deg);
+        }
+    }
+
+    .card-text {
+        padding-right: 10px;
+    }
+
+    .card-details img {
+            display: block;
+    }
+
+    .card-img img {
+        display: none
+    }
+
+
 }

@@ -1,14 +1,15 @@
 footer {
     background-color: $footer;
-    margin: 0;
+    margin: 0 auto;
 
     .container {
         padding: 40px 15px;
+        justify-content: center;
     }
 
     .footer-flex {
-        width: 25%;
-        padding: 40px 15px;
+        padding: 40px 40px;
+        width: 166px;
     }
 
     ul {
@@ -36,6 +37,7 @@ footer {
         opacity: .7;
         padding: 0 5px;
         cursor: pointer;
+        text-decoration: none;
         transition: 200ms opacity ease-in;
         &:hover {
             opacity: 1;

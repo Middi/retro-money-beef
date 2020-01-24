@@ -1,56 +1,43 @@
 .left-pic {
     width: 100%;
     position: relative;
-  	z-index: 1;
+    z-index: 1;
     &-text {
-      width: 45%;
+      width: 49%;
+      padding-left: 15px;
+      overflow: hidden;
     }
     &-img {
-      width: 52%;
+      width: 49%;
       background-image: url('../img/about-img.png');
       background-size: contain;
       height: 500px;
       background-repeat: no-repeat;
       background-position: center left;
+      position: relative;
     }
     
 }
 
-.about-blob {
-    position: absolute;
-    top: -120px;
-    left: -870px;
-    width: 100vw;
-    transform: scale(.82);
-    animation: aboutMoveLarge 2s ease-in-out infinite alternate;
-    // transform-origin: 50% 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    z-index: 0;
-  }
-  
-@keyframes aboutMove {
-  0%   { transform: scale(.6)   translate(0px, -370px); }
-  100% { transform: scale(.8)   translate(10px, -70px) rotate(-20deg); }
-}
-
-// @keyframes aboutMoveLarge {
-//     0%   { transform: scale(.9)  }
-//     100% { transform: scale(1) rotate(-20deg); }
-//   }
-
-
-// @media all and (max-width: 1200px) {
-
-//   .about-blob {
-//     right: -200px;
-//     animation: move 100s ease-in-out infinite;
-//   }
-// }
-
-
 .car {
   height: 400px;
   background-image: url('../img/signup-img.png');
+}
+
+
+@media all and (max-width: 850px) {
+  .left-pic {
+    margin: 0 auto;
+    // max-width: 600px;
+  }
+  
+  .left-pic-img {
+    display: none;
+  }
+
+  .left-pic-text {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
 }

@@ -1,17 +1,11 @@
-section{
-  width: 100%;
-  position: relative;
-}
-
-
-
-.hero {
-    margin: 50px 0 0 0;
-  	z-index: 1;
+.right-pic {
+    margin: 50px auto;
+    z-index: 1;
   	.container {
    		align-items: center;
   	}
     &-text {
+      overflow: hidden;
       width: 50%;
     }
     &-img {
@@ -26,33 +20,19 @@ section{
 }
 
 
-.blob {
-    position: absolute;
-    top: -400px;
-    right: -400px;
-    width: 90vw;
-    animation: moveLarge 20s ease-in-out infinite alternate;
-    transform-origin: 0% 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+@media all and (max-width: 850px) {
+
+  .right-pic {
+    margin: 50px auto 0;
+    max-width: 600px;
   }
-  
-@keyframes move {
-  0%   { transform: scale(.6)   translate(50px, -370px); }
-  100% { transform: scale(.8)   translate(10px, -70px) rotate(-20deg); }
+
+  .right-pic-img {
+    display: none;
+  }
+
+  .right-pic-text {
+    width: 100%;
+    text-align: center;
+  }
 }
-
-@keyframes moveLarge {
-    0%   { transform: scale(.9)   translate(10px, 0px); }
-    100% { transform: scale(1)   translate(15px, 50px) rotate(-20deg); }
-  }
-
-
-// @media all and (max-width: 1200px) {
-
-//   .blob {
-//     right: -200px;
-//     animation: move 100s ease-in-out infinite;
-//   }
-// }
