@@ -1,0 +1,98 @@
+.testimonials{
+    position: relative
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 55px auto;
+    border: 1px solid $border;
+    border-radius: 13px;
+    padding: 35px 50px;
+    max-width: 480px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        right: 20px;
+        top: 4px;
+        height: 220px;
+        width: 220px;
+        background-image: url('../img/testimonial-blob.png');
+        background-size: 220px;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+
+    &:after {
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 4px;
+        height: 220px;
+        width: 220px;
+        background-image: url('../img/quote-marks.png');
+        background-size: 160px;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    &-text {
+        flex-grow: 2;
+        padding-right: 38px;
+        p {
+            font-size: .9rem;
+            color: lighten($black, 10);
+            line-height: 1.2;
+        }
+    }
+
+    &-img img {
+        height: 160px;
+        width: 160px;
+    }
+
+    &-name {
+        font-family:'Libre Baskerville', serif;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1;
+    }
+    &-location {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+}
+
+
+.testimonial-blob-1 svg {
+        position: absolute;
+        left: -300px;
+        bottom: -340px;
+}
+
+
+.testimonial-blob-2 svg {
+    left: 40%;
+    position: absolute;
+    bottom: -300px;
+}
+
+
+.testimonial-blob-3 svg {
+    right: -300px;
+    position: absolute;
+    bottom: -400px;
+}

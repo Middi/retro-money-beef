@@ -70,13 +70,6 @@ embed,iframe,object{max-width:100%}
 #nav-toggle.open #hamburger span:nth-child(3){-webkit-transition-delay:.18s;transition-delay:.18s}
 #nav-toggle.open #cross span:nth-child(1){height:100%;-webkit-transition-delay:.28s;transition-delay:.28s}
 #nav-toggle.open #cross span:nth-child(2){width:100%;-webkit-transition-delay:.45s;transition-delay:.45s}
-footer{padding:0 15px 1px;-webkit-box-sizing:border-box;box-sizing:border-box;margin-top:-3px;width:100%;position:relative}
-footer p,footer a{color:white}
-footer a:hover{color:white;opacity:.9;cursor:pointer}
-footer .logo{height:80px;margin:20px 0}
-footer:before{position:absolute;content:"";background-position:center bottom;background-size:100% auto;background-repeat:no-repeat;pointer-events:none;top:-138px;height:140px;left:0;right:0}
-.footer-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.footer-links h5{text-align:center;color:white}
 html,body,main,#page{height:100%;background-color:#fefefe}
 .container{max-width:1200px;margin:0 auto;position:relative}
 html{font-size:16px}
@@ -123,9 +116,7 @@ pre{white-space:pre-wrap;word-break:break-word;word-wrap:break-word;-webkit-hyph
 .article-container .avatar{border:0}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
-}@media(max-width:861px){.logo{height:23px;margin-bottom:6px}
 }@media all and (max-width:782px){.admin-bar header{top:46px}
-}@media(max-width:767px){.logo{height:36px}
 }@media all and (max-width:720px){#nav-menu{height:0;width:100%;overflow:hidden;background-image:url(../img/squiggle.png);-webkit-transition:400ms all ease-in-out;transition:400ms all ease-in-out;z-index:2}
 #nav-menu ul{padding-top:100px}
 #nav-menu li{display:block;width:100%;text-align:center;padding:1.4rem 0}

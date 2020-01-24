@@ -12,7 +12,7 @@
 @import 'about';
 @import 'egobar';
 @import 'hiw';
-@import 'cards';
+@import 'card';
 @import 'footer';
 @import 'animations';
 
@@ -26,6 +26,11 @@ html, body, main, #page {
     margin: 0 auto;
     position: relative;
     padding: 0 15px;
+}
+
+.container {
+
+    padding: 60px 15px;
 }
 
 .sm-container {
@@ -63,4 +68,8 @@ html, body, main, #page {
 
 .underline-yellow:before {
     background-color: $yellow;
+}
+
+.bg-grey {
+    background-color: darken($light-grey, 2);
 }

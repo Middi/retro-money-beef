@@ -88,7 +88,7 @@ p {
         width: 70%;
         transition: 250ms all ease;
         background-color: darken($blue,6);
-        bottom: 10px;
+        bottom: 14px;
         left: 50%;
         position: absolute;
       }
@@ -166,9 +166,9 @@ blockquote {
 
 .text-right { text-align: right }
 
-small span {
+small {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 0.4;
 }
 
 pre {

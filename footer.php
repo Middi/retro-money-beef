@@ -13,11 +13,11 @@
 
 
 <?php wp_footer(); ?>
-</div><!-- wrapper end -->
+    </div><!-- wrapper end -->
    
-	<footer>
-          
-    </footer>
+        <footer>
+            <h1>Some footer</h1>
+        </footer>
     </div> <!-- page end -->
 </body>
 

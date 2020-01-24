@@ -19,6 +19,7 @@ get_header();
     <?php get_template_part('template-parts/content', 'egobar'); ?>
     <?php get_template_part('template-parts/content', 'how-it-works'); ?>
     <?php get_template_part('template-parts/content', 'pack'); ?>
+    <?php get_template_part('template-parts/content', 'testimonials'); ?>
 
     <!-- <h1>Hello home page</h1>
 
