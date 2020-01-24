@@ -1,38 +1,33 @@
 .right-pic {
-    margin: 50px auto;
-    z-index: 1;
-  	.container {
-   		align-items: center;
-  	}
-    &-text {
-      overflow: hidden;
-      width: 50%;
-    }
-    &-img {
-      width: 50%;
-      background-image: url('../img/hero-img.png');
-      background-size: contain;
-      height: 400px;
-      background-repeat: no-repeat;
-      background-position: center right;
-    }
-    
+	margin: 50px auto;
+	z-index: 1;
+	.container {
+		align-items: center;
+	}
+	&-text {
+		overflow: hidden;
+		width: 50%;
+	}
+	&-img {
+		width: 50%;
+		background-image: url("../img/hero-img.png");
+		background-size: contain;
+		height: 400px;
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
 }
 
-
 @media all and (max-width: 850px) {
+	.right-pic {
+		margin: 50px auto 0;
+		max-width: 600px;
+	}
 
-  .right-pic {
-    margin: 50px auto 0;
-    max-width: 600px;
-  }
+	.right-pic-img { display: none }
 
-  .right-pic-img {
-    display: none;
-  }
-
-  .right-pic-text {
-    width: 100%;
-    text-align: center;
-  }
+	.right-pic-text {
+		width: 100%;
+		text-align: center;
+	}
 }

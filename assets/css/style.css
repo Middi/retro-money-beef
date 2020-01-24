@@ -125,7 +125,7 @@ pre{white-space:pre-wrap;word-break:break-word;word-wrap:break-word;-webkit-hyph
 #timeline{max-width:1100px;margin:120px auto 20px;position:relative;padding:0 10px;-webkit-transition:all .4s ease;transition:all .4s ease}
 #timeline:after{content:"";clear:both;display:table;width:100%}
 #timeline .timeline-item{padding-bottom:60px;position:relative}
-#timeline .timeline-item:after,#timeline .timeline-item:before{content:'';display:block;width:100%;clear:both}
+#timeline .timeline-item:after,#timeline .timeline-item:before{content:"";display:block;width:100%;clear:both}
 #timeline .timeline-item:before{content:"";width:6px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(70%,rgba(0,0,0,0.12)),color-stop(0,rgba(255,255,255,0)));background-image:linear-gradient(rgba(0,0,0,0.12) 70%,rgba(255,255,255,0) 0);background-position:right;background-size:6px 20px;background-repeat:repeat-y;height:86%;left:50%;top:32px;position:absolute}
 #timeline .timeline-item:last-child:before{height:100%;width:6px;background-image:none}
 #timeline .timeline-item .timeline-icon{width:32px;height:32px;position:absolute;top:0;left:50%;overflow:hidden;margin-left:-13px;border-radius:50%}
@@ -137,15 +137,15 @@ pre{white-space:pre-wrap;word-break:break-word;word-wrap:break-word;-webkit-hyph
 #timeline .timeline-item .timeline-content.right{float:right}
 .testimonials{position:relative}
 .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;margin:55px auto;border:1px solid #cdcdcd;border-radius:13px;padding:35px 50px;max-width:480px;position:relative;z-index:1}
-.card:before{position:absolute;content:'';right:20px;top:4px;height:220px;width:220px;background-image:url("../img/testimonial-blob.png");background-size:220px;background-repeat:no-repeat;z-index:0}
-.card:after{position:absolute;content:'';left:16px;top:4px;height:220px;width:220px;background-image:url("../img/quote-marks.png");background-size:160px;background-repeat:no-repeat;z-index:0}
+.card:before{position:absolute;content:"";right:20px;top:4px;height:220px;width:220px;background-image:url("../img/testimonial-blob.png");background-size:220px;background-repeat:no-repeat;z-index:0}
+.card:after{position:absolute;content:"";left:16px;top:4px;height:220px;width:220px;background-image:url("../img/quote-marks.png");background-size:160px;background-repeat:no-repeat;z-index:0}
 .card-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:2}
 .card-text{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2;padding-right:38px}
 .card-text p{font-size:.9rem;color:#464447;line-height:1.2}
 .card-details{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .card-details img{display:none;height:40px;width:40px;margin-right:8px;border-radius:40px}
 .card-img img{height:160px;width:160px}
-.card-name{font-family:'Libre Baskerville',serif;font-weight:700;margin:0;line-height:1;display:inline}
+.card-name{font-family:"Libre Baskerville",serif;font-weight:700;margin:0;line-height:1;display:inline}
 .card-location{margin:0;padding:0;line-height:1}
 .testimonial-blob-1 svg{position:absolute;left:-300px;bottom:-340px}
 .testimonial-blob-2 svg{left:40%;position:absolute;bottom:-300px}

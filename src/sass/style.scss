@@ -2,79 +2,66 @@
 =                 STYLESHEET                 =
 =============================================*/
 
-@import 'normalise';
-@import 'wordpress';
-@import 'colors';
-@import 'typography';
-@import 'buttons';
-@import 'nav';
-@import 'hero';
-@import 'about';
-@import 'egobar';
-@import 'hiw';
-@import 'card';
-@import 'footer';
-@import 'animations';
+@import "normalise";
+@import "wordpress";
+@import "colors";
+@import "typography";
+@import "buttons";
+@import "nav";
+@import "hero";
+@import "about";
+@import "egobar";
+@import "hiw";
+@import "card";
+@import "footer";
+@import "animations";
 
 html, body, main, #page {
-    height: 100%;
-    background-color: $white;
+	height: 100%;
+	background-color: $white;
 }
 
 section {
-  width: 100%;
-  position: relative;
+	width: 100%;
+	position: relative;
 }
 
 .container, .container-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 15px;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 15px;
 }
 
-.container {
-    padding: 60px 15px;
-}
+.container { padding: 60px 15px }
 
 .sm-container {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .bg-squiggle {
-    background-image: url('../img/squiggle.png');
-    overflow: hidden;
+	background-image: url("../img/squiggle.png");
+	overflow: hidden;
 }
 
 .title-container-h1 {
-    text-align: center;
-    padding: 30px 15px;
+	text-align: center;
+	padding: 30px 15px;
 }
 
-.title-container-h3 {
-    text-align: center;
-}
+.title-container-h3 { text-align: center }
 
-.underline-green:before {
-    background-color: $green;
-}
+.underline-green:before { background-color: $green }
 
+.underline-pink:before { background-color: $pink }
 
-.underline-pink:before {
-    background-color: $pink;
-}
+.underline-yellow:before { background-color: $yellow }
 
-.underline-yellow:before {
-    background-color: $yellow;
-}
-
-.bg-grey {
-    background-color: darken($light-grey, 2);
-}
+.bg-grey { background-color: darken($light-grey, 2) }
