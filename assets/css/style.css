@@ -49,6 +49,7 @@ h1,h2,h3,h4,h5,h6,p,label,a,li,textarea{font-family:'Libre Baskerville',serif;co
 h1{font-size:2.9rem;margin:0 0 .31rem 0;line-height:1.2em}
 h2{font-size:1.75rem;margin:2.4rem 0 .31rem 0}
 h3{margin:15px 0 35px 0;font-size:1.2rem}
+h4{margin:10px 0;font-size:1rem}
 h5{font-size:1rem;margin:2.4rem 0 -0.7rem 0}
 h6{font-size:.8rem;margin:2.4rem 0 -0.7rem 0}
 p{font-family:'Open Sans',sans-serif;margin:15px 0 25px 0;font-size:1.1rem;font-weight:200;line-height:1.7rem;letter-spacing:-0.003rem}
@@ -139,7 +140,7 @@ section{width:100%;position:relative}
 #timeline .timeline-item .timeline-content h2{padding:15px;margin:-20px 0 0 -20px}
 #timeline .timeline-item .timeline-content.right{float:right}
 .testimonials{position:relative}
-.card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;margin:55px auto;border:1px solid #cdcdcd;border-radius:13px;padding:35px 50px;max-width:480px;position:relative}
+.card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;margin:55px auto;border:1px solid #cdcdcd;border-radius:13px;padding:35px 50px;max-width:480px;position:relative;z-index:1}
 .card:before{position:absolute;content:'';right:20px;top:4px;height:220px;width:220px;background-image:url("../img/testimonial-blob.png");background-size:220px;background-repeat:no-repeat;z-index:0}
 .card:after{position:absolute;content:'';left:16px;top:4px;height:220px;width:220px;background-image:url("../img/quote-marks.png");background-size:160px;background-repeat:no-repeat;z-index:0}
 .card-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:2}
@@ -151,6 +152,16 @@ section{width:100%;position:relative}
 .testimonial-blob-1 svg{position:absolute;left:-300px;bottom:-340px}
 .testimonial-blob-2 svg{left:40%;position:absolute;bottom:-300px}
 .testimonial-blob-3 svg{right:-300px;position:absolute;bottom:-400px}
+footer{background-color:#fdf1d4;margin:0}
+footer .container{padding:40px 15px}
+footer .footer-flex{width:25%;padding:40px 15px}
+footer ul{list-style-type:none}
+footer li{line-height:1.2}
+footer li a{line-height:1;text-decoration:none;font-family:'Open Sans',sans-serif;font-weight:200;font-size:1rem;color:#2c2b2d;opacity:.9}
+footer li a:hover{opacity:1;text-decoration:underline}
+footer .social-icons{opacity:.7;padding:0 5px;cursor:pointer;-webkit-transition:200ms opacity ease-in;transition:200ms opacity ease-in}
+footer .social-icons:hover{opacity:1}
+footer .copyright{margin:0;padding:0 5p 5px;color:#3b3a3d;font-size:.9rem}
 html,body,main,#page{height:100%;background-color:#fefefe}
 .container,.container-nav{max-width:1200px;margin:0 auto;position:relative;padding:0 15px}
 .container{padding:60px 15px}

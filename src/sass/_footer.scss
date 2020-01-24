@@ -1,3 +1,52 @@
 footer {
-    
+    background-color: $footer;
+    margin: 0;
+
+    .container {
+        padding: 40px 15px;
+    }
+
+    .footer-flex {
+        width: 25%;
+        padding: 40px 15px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        line-height: 1.2;
+        a {
+            line-height: 1;
+            text-decoration: none;
+            font-family:'Open Sans', sans-serif;
+            font-weight: 200;
+            font-size: 1rem;
+            color: $black;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .social-icons {
+        opacity: .7;
+        padding: 0 5px;
+        cursor: pointer;
+        transition: 200ms opacity ease-in;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .copyright {
+        margin: 0;
+        padding:  0 5p 5px;
+        color: lighten($black, 6);
+        font-size: .9rem;
+    }
 }
+

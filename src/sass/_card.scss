@@ -13,6 +13,7 @@
     padding: 35px 50px;
     max-width: 480px;
     position: relative;
+    z-index: 1;
 
     &:before {
         position: absolute;
@@ -69,6 +70,7 @@
         margin: 0;
         line-height: 1;
     }
+
     &-location {
         margin: 0;
         padding: 0;
