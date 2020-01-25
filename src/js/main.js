@@ -1,5 +1,4 @@
-"use strict";
-
+// Nav bar
 var navToggle = document.querySelector('#nav-toggle');
 var navMenuUl = document.querySelector('.nav-ul');
 var navMenu = document.querySelector('#nav-menu');
@@ -16,6 +15,7 @@ if (navToggle) {
   });
 }
 
+// Ajax Forms
 jQuery('#user-form').ajaxForm({
   success: function success(res) {
     jQuery('.notice').html(res);
@@ -27,7 +27,9 @@ jQuery('#user-form').ajaxForm({
   error: function error(res) {
     console.log('nhh', res);
   }
-}); // var getUrlParameter = function getUrlParameter(sParam) {
+}); 
+
+// var getUrlParameter = function getUrlParameter(sParam) {
 // 	var sPageURL = window.location.search.substring(1),
 // 		sURLVariables = sPageURL.split('&'),
 // 		sParameterName,
@@ -44,6 +46,7 @@ jQuery('#user-form').ajaxForm({
 // 	jQuery('#acf-field_5df80db3d9ca0').val(getUrlParameter('customer'));
 // });
 
+// Ego Bar
 if(jQuery('#carousel').length > 0) {
 
   var carousel = jQuery('#carousel');
@@ -63,6 +66,7 @@ if(jQuery('#carousel').length > 0) {
   
 }
 
+// Scroll Animation
 jQuery(document).ready(function() {
   // Check if element is scrolled into view
   function isScrolledIntoView(elem) {
@@ -84,9 +88,7 @@ jQuery(document).ready(function() {
         else if(jQuery(this).hasClass('down-animate')) {
           jQuery(this).addClass('slide-down');
         }
-        else {
-          jQuery(this).addClass('slide-in-left');
-        }
+        else jQuery(this).addClass('slide-in-left');
       }
     });
   });

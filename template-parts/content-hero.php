@@ -12,9 +12,9 @@
 <section class="right-pic">
     <div class="container flex">
         <div class="right-pic-text slide-in-left">
-            <h1>Sell your old stuff make some money.</h1>
-            <p>Signup now and turn your old items into cash.</p>
-            <a class="arrow-link" href="#">Get Started </a>
+            <h1><?php the_field('heading'); ?></h1>
+            <p><?php the_field('sub_heading'); ?></p>
+            <a class="arrow-link" href="#"><?php the_field('cta_text'); ?> </a>
         </div>
         <div class="right-pic-img slide-in-right"></div>
     <div class="blob">

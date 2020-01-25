@@ -14,12 +14,10 @@
     <div class="container flex">
         <div class="left-pic-img slide-in-left-delay"></div>
         <div class="left-pic-text slide-in-right-delay">
-            <h1 class="h1-underline underline-green">What We Do.</h1>
-            <p>We buy your old and <strong>unwanted items</strong> which helps you free up money and closet space.</p>
-            <p class="display-p">We will give you an <strong>offer for your items</strong>, want to keep them? not a problem, we will send them back.</p>
-            <p class="display-p">we buy all-sorts of vintage items from <strong>cameras</strong>, to <strong>vases</strong>, to <strong>precious metals</strong>, why not give us a try?</p>
+            <h1 class="h1-underline underline-green"><?php the_field('about_heading'); ?></h1>
+            <?php the_field('about_text'); ?>
             <br/> <br/>
-            <a class="btn btn-black" href="#">Get Started </a>
+            <a class="btn btn-black" href="#"> <?php the_field('cta_text'); ?> </a>
         </div>
 
         <div class="about-blob">
