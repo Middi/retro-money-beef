@@ -22,7 +22,7 @@
         <div id="timeline">
             <div class="timeline-item">
                 <div class="timeline-icon">
-									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#fee4db" stroke-width="9"/></svg>
+					<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#fee4db" stroke-width="9"/></svg>
                 </div>
                 <div class="timeline-content scroll-animation">
                     <div class="text-right">
@@ -39,7 +39,7 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#CADEEA" stroke-width="9"/></svg>
+					<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#CADEEA" stroke-width="9"/></svg>
                 </div>
                 <div class="timeline-content right scroll-animation right-animate">
                     <h2 class="h2-underline underline-blue">Pack a box</h2>
@@ -56,7 +56,7 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#C2E5D6" stroke-width="9"/></svg>
+					<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#C2E5D6" stroke-width="9"/></svg>
                 </div>
                 <div class="timeline-content scroll-animation">
                     <div class="text-right">
@@ -75,7 +75,7 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#FBE7B7" stroke-width="9"/></svg>
+					<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#FBE7B7" stroke-width="9"/></svg>
                 </div>
                 <div class="timeline-content right scroll-animation right-animate">
                     <h2 class="h2-underline underline-yellow">Accept or Return</h2>
