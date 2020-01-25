@@ -18,7 +18,11 @@ if (navToggle) {
 // Ajax Forms
 jQuery('#user-form').ajaxForm({
   success: function success(res) {
+    var status = JSON.parse(res).status;
+    var message = JSON.parse(res).message;
+
     jQuery('#user-form').fadeOut("fast", function(){
+      jQuery('.alert p').html(message);
       jQuery('.alert').fadeIn();
     });
     jQuery('.notice').html(res);
