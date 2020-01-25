@@ -22,21 +22,13 @@
         <div id="timeline">
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <svg width="46" height="46" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop-HD" transform="translate(-937 -2247)" stroke="#FEE4DB" stroke-width="9">
-                                <circle id="Oval-2" cx="960" cy="2270" r="18" />
-                            </g>
-                        </g>
-                    </svg>
+									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#fee4db" stroke-width="9"/></svg>
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content scroll-animation">
                     <div class="text-right">
                         <h2 class="h2-underline underline-pink reverse-underline">Signup</h2>
                     </div>
-                    <p>
-                        click the button below, fill in your name and email and we will send you your starter pack.
-                    </p>
+                    <p>click the button below, fill in your name and email and we will send you your starter pack.</p>
                     <a class="arrow-link arrow-link-pink" href="#">Get Started </a>
                     <div class="timeline-number">
                         <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/hiw-01.png"
@@ -47,15 +39,9 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <svg width="46" height="46" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop-HD" transform="translate(-937 -2247)" stroke="#CADEEA" stroke-width="9">
-                                <circle id="Oval-2" cx="960" cy="2270" r="18" />
-                            </g>
-                        </g>
-                    </svg>
+									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#CADEEA" stroke-width="9"/></svg>
                 </div>
-                <div class="timeline-content right">
+                <div class="timeline-content right scroll-animation right-animate">
                     <h2 class="h2-underline underline-blue">Pack a box</h2>
                     <p>
                         Fill a box with all the items you want to send us. stick on the freepost label and send to the
@@ -70,15 +56,9 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <svg width="46" height="46" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop-HD" transform="translate(-937 -2247)" stroke="#C2E5D6" stroke-width="9">
-                                <circle id="Oval-2" cx="960" cy="2270" r="18" />
-                            </g>
-                        </g>
-                    </svg>
+									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#C2E5D6" stroke-width="9"/></svg>
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content scroll-animation">
                     <div class="text-right">
                         <h2 class="h2-underline underline-green reverse-underline">Recieve offer</h2>
                     </div>
@@ -95,15 +75,9 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <svg width="46" height="46" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop-HD" transform="translate(-937 -2247)" stroke="#FBE7B7" stroke-width="9">
-                                <circle id="Oval-2" cx="960" cy="2270" r="18" />
-                            </g>
-                        </g>
-                    </svg>
+									<svg height="46" width="46" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" fill="none" r="18" stroke="#FBE7B7" stroke-width="9"/></svg>
                 </div>
-                <div class="timeline-content right">
+                <div class="timeline-content right scroll-animation right-animate">
                     <h2 class="h2-underline underline-yellow">Accept or Return</h2>
                     <p>
                         80% of our customers accept our offer, but if you’re not happy, we will return your items free
@@ -122,17 +96,7 @@
         </div>
 
         <div class="hiw-blob">
-            <svg width="755" height="603" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Desktop-HD" transform="translate(-802 -2058)" fill="#D3EAE1" fill-rule="nonzero">
-                        <g id="blob-shape-(3)" transform="rotate(163 629.14 1394.102)">
-                            <path
-                                d="M637.373 129.473C710.808 205.353 771.5 315.24 750.951 402.4c-20.709 87.329-122.498 151.929-218.076 183.203-95.736 31.274-185.1 29.224-283.545-2.563-98.445-31.617-205.81-93.14-238.306-189.014-32.497-96.045 10.035-226.612 85.86-303.004C172.708 14.63 281.985-7.587 379.634 2.154c97.807 9.741 184.145 51.611 257.74 127.32z"
-                                id="Path" />
-                        </g>
-                    </g>
-                </g>
-            </svg>
+					<svg height="603" width="755" xmlns="http://www.w3.org/2000/svg"><path d="M189.009 547.88C96.597 496.787 6.429 409.445.599 320.087-5.132 230.52 73.323 138.982 155.58 81.13 237.991 23.231 324.051-.935 427.487.68c103.387 1.453 224.048 28.898 283.155 111.082 59.158 82.347 56.658 219.644 6.481 314.866-50.176 95.223-148.182 148.419-244.412 167.652-96.381 19.281-191.189 4.483-283.702-46.4z" fill="#d3eae1"/></svg>
         </div>
     </div>
 </section>

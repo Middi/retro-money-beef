@@ -33,12 +33,10 @@ h3 {
     font-size: 1.2rem;
 }
 
-
 h4 {
     margin: 10px 0;
     font-size: 1rem;
 }
-
 
 h5 {
     font-size: 1rem;
@@ -58,7 +56,6 @@ p {
     line-height: 1.7rem;
     letter-spacing: -0.003rem;
 }
-
 
 .h1-title {
     font-size: 3rem;
@@ -80,7 +77,7 @@ p {
         bottom: 1px;
         right: -10%;
         position: absolute;
-      }
+    }
 }
 
 .h2-underline {
@@ -100,9 +97,7 @@ p {
       }
 }
 
-.reverse-underline:before {
-    left: -10%;
-}
+.reverse-underline:before { left: -10% }
 
 .h3-underline {
     position: relative;
@@ -118,7 +113,7 @@ p {
         bottom: -3px;
         left: 50%;
         position: absolute;
-      }
+    }
 }
 
 
@@ -156,7 +151,8 @@ blockquote {
     margin: 2rem 3rem;
     padding: 5px 40px 20px 40px;
     text-align: left;
-    border-left: 3px solid $black;
+		border-left: 3px solid $black;
+		
     p {
         font-size: 1.2rem;
         font-style: italic;
@@ -185,26 +181,17 @@ pre {
 }
 
 @media all and (max-width: 720px) {
-    html {
-        font-size: 14px;
-    }
+    html { font-size: 14px }
 }
 
 
 @media all and (max-width: 560px) {
-
-blockquote {
-    margin: 2rem 1.2rem 2rem 0.5rem;
-    padding: 10px 20px 10px 20px;
-    text-align: left;
-    border-left: 3px solid $brand;
-    p {
-        margin-top: 0;
-    }
-    
+	blockquote {
+			margin: 2rem 1.2rem 2rem 0.5rem;
+			padding: 10px 20px 10px 20px;
+			text-align: left;
+			border-left: 3px solid $brand;
+			
+			p { margin-top: 0 }
+	}
 }
-}
-@media all and (max-width: 450px) {
-    ol, ul { padding-left: 30px }
- }
- 

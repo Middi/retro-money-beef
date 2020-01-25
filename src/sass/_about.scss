@@ -1,43 +1,41 @@
 .left-pic {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    &-text {
-      width: 49%;
-      padding-left: 15px;
-      overflow: hidden;
-    }
-    &-img {
-      width: 49%;
-      background-image: url('../img/about-img.png');
-      background-size: contain;
-      height: 500px;
-      background-repeat: no-repeat;
-      background-position: center left;
-      position: relative;
-    }
-    
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	&-text {
+		width: 49%;
+		padding-left: 15px;
+		overflow: hidden;
+	}
+	&-img {
+		width: 49%;
+		background-image: url("../img/about-img.png");
+		background-size: contain;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center left;
+		position: relative;
+	}
 }
 
 .car {
-  height: 400px;
-  background-image: url('../img/signup-img.png');
+	height: 400px;
+	background-image: url("../img/signup-img.png");
 }
 
-
 @media all and (max-width: 850px) {
-  .left-pic {
-    margin: 0 auto;
-    // max-width: 600px;
-  }
-  
-  .left-pic-img {
-    display: none;
-  }
+	.left-pic { 
+		margin: 0 auto;
+		.container {
+			max-width: 600px;
+		}
+	}
 
-  .left-pic-text {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
+	.left-pic-img { display: none }
+
+	.left-pic-text {
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
 }

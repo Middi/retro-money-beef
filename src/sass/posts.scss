@@ -1,91 +1,131 @@
-@import 'normalise';
-@import 'wordpress';
-@import 'colors';
-@import 'nav';
-@import 'footer';
+/*=============================================
+=              Post Type Stylesheet           =
+=============================================*/
 
+@import "normalise";
+@import "wordpress";
+@import "colors";
+@import "nav";
+@import "footer";
 
 html, body, main, #page {
-    height: 100%;
-    background-color: $white;
+	height: 100%;
+	background-color: $white;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
+section {
+	width: 100%;
+	position: relative;
 }
+
+.container, .container-nav {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 15px;
+}
+
+.container { padding: 60px 15px }
+
+.sm-container {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bg-squiggle {
+	background-image: url("../img/squiggle.png");
+	overflow: hidden;
+}
+
+.title-container-h1 {
+	text-align: center;
+	padding: 30px 15px;
+}
+
+.title-container-h3 { text-align: center }
+
+.underline-green:before { background-color: $green }
+
+.underline-pink:before { background-color: $pink }
+
+.underline-yellow:before { background-color: $yellow }
+
+.bg-grey { background-color: darken($light-grey, 2) }
+
 /*=============================================
 =                  TYPOGRAPHY                 =
 =============================================*/
 
-html { font-size: 16px }
+html { 	font-size: 16px }
 
 h1, h2, h3, h4, h5, h6, label {
-    font-family: "Open Sans", sans-serif;
-    color: $black;
-    letter-spacing: 0;
-    font-weight: 700;
-    font-style: normal;
-    word-break: break-word;
-    word-wrap: break-word;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	font-family: "Open Sans", sans-serif;
+	color: $black;
+	letter-spacing: 0;
+	font-weight: 700;
+	font-style: normal;
+	word-break: break-word;
+	word-wrap: break-word;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin: 2.4rem 0 0.31rem 0;
-    line-height: 1.2em;
+	font-size: 2.2rem;
+	margin: 2.4rem 0 0.31rem 0;
+	line-height: 1.2em;
 }
 
 h2 {
-    font-size: 1.75rem;
-    margin: 2.4rem 0 0.31rem 0;
+	font-size: 1.75rem;
+	margin: 2.4rem 0 0.31rem 0;
 }
 
 h3 {
-    font-size: 1.45rem;
-    margin: 2.4rem 0 -0.5rem 0;
+	font-size: 1.45rem;
+	margin: 2.4rem 0 -0.5rem 0;
 }
 
 h4 {
-    font-size: 1.25rem;
-    margin: 2.4rem 0 -0.7rem 0;
+	font-size: 1.25rem;
+	margin: 2.4rem 0 -0.7rem 0;
 }
 
 h5 {
-    font-size: 1rem;
-    margin: 2.4rem 0 -0.7rem 0;
+	font-size: 1rem;
+	margin: 2.4rem 0 -0.7rem 0;
 }
 
 h6 {
-    font-size: 0.8rem;
-    margin: 2.4rem 0 -0.7rem 0;
+	font-size: 0.8rem;
+	margin: 2.4rem 0 -0.7rem 0;
 }
 
 .h1-title {
-    font-size: 3rem;
-    display: inline;
+	font-size: 3rem;
+	display: inline;
 }
 
-
-.title-container {
-    text-align: center;
-}
+.title-container { text-align: center }
 
 a { text-decoration: underline }
 
 p, a, li, textarea {
-    color: $black;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.1rem;
-    letter-spacing: -0.003rem;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.7;
+	color: $black;
+	font-family: "Libre Baskerville", serif;
+	font-size: 1.1rem;
+	letter-spacing: -0.003rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.7;
 }
 
 p, a { margin: 1.4rem 0 0.4rem 0 }
@@ -97,153 +137,139 @@ strong { font-weight: 700 }
 em { font-style: italic }
 
 .small {
-    a {
-        font-family: "Open Sans", sans-serif;
-        color: lighten($black, 2);
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: 600;
-    }
-    font-size: 1rem;
-    color: lighten($black, 10);
-    margin: 0;
-    padding: 0;
+	a {
+		font-family: "Open Sans", sans-serif;
+		color: lighten($black, 2);
+		font-size: 1rem;
+		text-decoration: none;
+		font-weight: 600;
+	}
+	font-size: 1rem;
+	color: lighten($black, 10);
+	margin: 0;
+	padding: 0;
 }
 
 li {
-    font-size: 1.25rem;
-    padding: 0;
+	font-size: 1.25rem;
+	padding: 0;
 }
 
 blockquote {
-    margin: 2rem 3rem;
-    padding: 5px 40px 20px 40px;
-    text-align: left;
-    border-left: 3px solid $black;
-    p {
-        font-size: 1.2rem;
-        font-style: italic;
-    }
+	margin: 2rem 3rem;
+	padding: 5px 40px 20px 40px;
+	text-align: left;
+	border-left: 3px solid $black;
+	p {
+		font-size: 1.2rem;
+		font-style: italic;
+	}
 
-    cite {
-        font-family:'Libre Baskerville', serif;
-        color: $brand;
-    }
+	cite {
+		font-family: "Libre Baskerville", serif;
+		color: $brand;
+	}
 }
 
 .text-center { text-align: center }
 
 small span {
-    font-size: 1rem;
-    line-height: 1;
+	font-size: 1rem;
+	line-height: 1;
 }
 
 pre {
-    white-space: pre-wrap;
-    word-break: break-word;
-    word-wrap: break-word;
-    hyphens: none;
+	white-space: pre-wrap;
+	word-break: break-word;
+	word-wrap: break-word;
+	hyphens: none;
 }
 
-@media all and (max-width: 720px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-
-@media all and (max-width: 560px) {
-
-blockquote {
-    margin: 2rem 1.2rem 2rem 0.5rem;
-    padding: 10px 20px 10px 20px;
-    text-align: left;
-    border-left: 3px solid $brand;
-    p {
-        margin-top: 0;
-    }
-    
-}
-}
-@media all and (max-width: 450px) {
-    ol, ul { padding-left: 30px }
- }
- 
-
- .bg-wrapper {
-    height: 100%;
-    margin-top: 49px;
+.bg-wrapper {
+	height: 100%;
+	margin-top: 49px;
 }
 
 .article-container {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 0 20px 140px;
-    display: block;
-    hyphens: auto;
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 60px 20px 140px;
+	display: block;
+	hyphens: auto;
 
-    .title {padding: 30px 0 10px}
+	.title { padding: 30px 0 10px }
 
-    a {word-break: break-all}
-    figure {
-        margin: 0;
-        margin-bottom: 8px;
-        width: 100%;
-        border: 1px solid lighten($black, 80);
-        padding-bottom: 56.25%;
-    }
-    ol {padding-left: 48px}
-    img {
-        display: block;
-        height: auto;
-        max-width: 100%;
-        border: 1px solid lighten($black, 80);
-    }
-    .view-buttons-container {
-        display: flex;
-        justify-content: center;
-    }
+	a { word-break: break-all }
+
+	figure {
+		margin: 0;
+		margin-bottom: 8px;
+		width: 100%;
+		border: 1px solid lighten($black, 80);
+		padding-bottom: 56.25%;
+	}
+
+	ol, ul { padding-left: 48px }
+
+	img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+		border: 1px solid lighten($black, 80);
+	}
+	.view-buttons-container {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .article-meta {
-    display: flex;
-    align-items: center;
-    margin: 20px 0 40px;
-    a {
-        margin: 0;
-    }
-    img {
-        padding-right: 10px;
-        border-radius: 20px;
-    }
-    &-info {
-        padding-top: 2px;
-    }
+	display: flex;
+	align-items: center;
+	margin: 20px 0 40px;
+	a { margin: 0 }
+	img {
+		padding-right: 10px;
+		border-radius: 20px;
+	}
+	&-info { padding-top: 2px }
 }
 
 .other-articles .card-container {
-    padding: 80px 0 20px;
-    .card {opacity: 1}
+	padding: 80px 0 20px;
+	.card { opacity: 1 }
 }
 
-.ct-mg {
-    margin-top: 70px;
-}
-
+.ct-mg { margin-top: 70px }
 
 .image-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
-.article-container .avatar {
-    border: none;
+.article-container .avatar { border: none }
+
+
+@media all and (max-width: 720px) {
+	html { font-size: 14px }
 }
 
-
+@media all and (max-width: 560px) {
+	blockquote {
+		margin: 2rem 1.2rem 2rem 0.5rem;
+		padding: 10px 20px 10px 20px;
+		text-align: left;
+		border-left: 3px solid $brand;
+		p {
+			margin-top: 0;
+		}
+	}
+}
 @media all and (max-width: 450px) {
-    .article-container {
-        padding: 0 15px 140px;
-    }
- }
- 
+	
+	
+	.article-container {
+		padding: 40px 15px 140px;
+		ol,	ul { padding-left: 30px }
+	}
+}

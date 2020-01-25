@@ -1,6 +1,6 @@
 .admin-bar header { top: 32px }
 
-.header-logo { 
+.header-logo {
 	position: absolute;
 	top: 10px;
 	left: 0px;
@@ -31,17 +31,17 @@
 			font-weight: 600;
 			transition: 250ms all ease;
 			color: rgba(0, 0, 0, 0.8);
-			font-size: .9rem;
+			font-size: 0.9rem;
 			position: relative;
 			text-transform: uppercase;
 		}
 		&:before {
 			transition: 350ms width ease;
 			z-index: -1;
-			content: '';
+			content: "";
 			height: 9px;
 			width: 0%;
-			background-color: darken($blue,10);
+			background-color: darken($blue, 10);
 			bottom: 11px;
 			right: 4%;
 			position: absolute;
@@ -62,7 +62,9 @@
 	bottom: 0;
 	opacity: 0.8;
 	display: none;
-	&:hover { opacity: 1 }
+	&:hover {
+		opacity: 1;
+	}
 
 	span {
 		transition: 0.25s ease-in-out;
@@ -113,7 +115,6 @@
 	}
 }
 
-
 #nav-toggle.open {
 	#hamburger span {
 		width: 0%;
@@ -132,23 +133,14 @@
 			transition-delay: 0.45s;
 		}
 	}
-
 }
-
-
-
 
 @media all and (max-width: 782px) {
-	.admin-bar header { 
-		top: 46px;
-	}
+	.admin-bar header { top: 46px }
 }
 
-
 /* Mobile */
-
 @media all and (max-width: 720px) {
-
 	#nav-menu {
 		height: 0vh;
 		width: 100%;
@@ -156,8 +148,9 @@
 		background-image: url(../img/squiggle.png);
 		transition: 400ms all ease-in-out;
 		z-index: 2;
-		
+
 		ul { padding-top: 100px }
+
 		li {
 			display: block;
 			width: 100%;
@@ -171,27 +164,23 @@
 				&:before {
 					transition: 350ms width ease;
 					z-index: -1;
-					content: '';
+					content: "";
 					height: 14px;
 					width: 0%;
-					background-color: darken($pink,10);
+					background-color: darken($pink, 10);
 					bottom: 0;
 					right: 4%;
 					position: absolute;
 				}
 
-				&:hover:before {
-					width: 50%;
-				}
+				&:hover:before { width: 50% }
 			}
 		}
-
 	}
-	#nav-toggle { 
+	#nav-toggle {
 		display: block;
-		margin: 13px 20px 0 0
+		margin: 13px 20px 0 0;
 	}
 
 	#nav-menu.nav-open { height: 104vh }
-
 }

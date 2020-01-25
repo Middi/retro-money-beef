@@ -12,8 +12,8 @@
 
 <section class="left-pic bg-grey">
     <div class="container flex">
-        <div class="left-pic-img car"></div>
-        <div class="left-pic-text">
+        <div class="left-pic-img car scroll-animation"></div>
+        <div class="left-pic-text scroll-animation right-animate">
             <h1 class="h1-underline underline-pink">Get your selling pack.</h1>
             <p>Signup now for your free selling starter pack and turn your old items into cash.</p>
             <br/> <br/>

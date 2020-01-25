@@ -60,3 +60,29 @@ if (jQuery('#carousel').length > 0) {
   var i = 0;
   setInterval(swap, 30);
 }
+
+jQuery(document).ready(function () {
+  // Check if element is scrolled into view
+  function isScrolledIntoView(elem) {
+    var docViewTop = jQuery(window).scrollTop();
+    var docViewBottom = docViewTop + jQuery(window).height();
+    var elemTop = jQuery(elem).offset().top + 40;
+    var elemBottom = elemTop + jQuery(elem).height();
+    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+  } // If element is scrolled into view, fade it in
+
+
+  jQuery(window).scroll(function () {
+    jQuery('.scroll-animation').each(function () {
+      if (isScrolledIntoView(this) === true) {
+        if (jQuery(this).hasClass('right-animate')) {
+          jQuery(this).addClass('slide-in-right');
+        } else if (jQuery(this).hasClass('down-animate')) {
+          jQuery(this).addClass('slide-down');
+        } else {
+          jQuery(this).addClass('slide-in-left');
+        }
+      }
+    });
+  });
+});

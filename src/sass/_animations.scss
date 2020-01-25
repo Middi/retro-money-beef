@@ -1,10 +1,74 @@
+// Scroll Animations
+
+.scroll-animation { opacity: 0 }
+
+.slide-down {
+	opacity: 0;
+	animation: 1s slideDown ease-in-out forwards;
+}
+
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	 }
+}
+
+.slide-in-left {
+	opacity: 0;
+	animation: 1s slideInLeft .3s ease-in-out forwards;
+}
+
+.slide-in-left-delay {
+	opacity: 0;
+	animation: 1s slideInLeft 1s ease-in-out forwards;
+}
+
+
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	 }
+}
+
+.slide-in-right {
+	opacity: 0;
+	animation: 1s slideInRight .3s ease-in-out forwards;
+}
+
+.slide-in-right-delay {
+	opacity: 0;
+	animation: 1s slideInRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	 }
+}
+
 // Blob Animations
 
 .blob {
 	position: absolute;
 	top: -300px;
 	right: -400px;
-	animation: hero 20s ease-in-out infinite alternate;
+	opacity: 0;
+	animation: hero 20s ease-in-out infinite alternate, fadeIn .4s ease-in forwards;
 	z-index: -1;
 }
 
@@ -12,7 +76,8 @@
 	position: absolute;
 	top: -70px;
 	left: -300px;
-	animation: about 20s ease-in-out infinite alternate;
+	opacity: 0;
+	animation: about 20s ease-in-out infinite alternate, .7s fadeIn .4s ease-in forwards;;
 	z-index: -1;
 }
 
@@ -23,6 +88,12 @@
 	opacity: 0.6;
 	animation: hiw 20s ease-in-out infinite alternate;
 	z-index: -1;
+}
+
+
+@keyframes fadeIn {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
 }
 
 @keyframes hiw {
