@@ -18,9 +18,10 @@ section {
 	position: relative;
 }
 
+
 .container, .container-nav {
 	max-width: 1200px;
-	margin: 0 15px;
+	margin: 0 auto;
 	position: relative;
 	padding: 0 15px;
 }
@@ -28,7 +29,7 @@ section {
 .container { 
 	margin: 0 auto;
 	padding: 20px 15px;
-}r { padding: 60px 15px }
+}
 
 .sm-container {
 	max-width: 800px;

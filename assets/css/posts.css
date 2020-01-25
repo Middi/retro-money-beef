@@ -83,9 +83,8 @@ footer .social-icons:hover{opacity:1}
 footer .copyright{font-family:"Open Sans",sans-serif;margin:0;padding:0 5px;color:#3b3a3d;font-size:.9rem}
 html,body,main,#page{height:100%;background-color:#fefefe}
 section{width:100%;position:relative}
-.container,.container-nav{max-width:1200px;margin:0 15px;position:relative;padding:0 15px}
+.container,.container-nav{max-width:1200px;margin:0 auto;position:relative;padding:0 15px}
 .container{margin:0 auto;padding:20px 15px}
-r{padding:60px 15px}
 .sm-container{max-width:800px;margin:0 auto;position:relative}
 .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .bg-squiggle{background-image:url("../img/squiggle.png");overflow:hidden}
