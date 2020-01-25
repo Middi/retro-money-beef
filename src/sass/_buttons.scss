@@ -1,9 +1,14 @@
 .btn {
 	padding: 13px 24px;
+	height: 48px;
+	font-family:'Libre Baskerville', serif;
 	text-decoration: none;
 	font-weight: 700;
 	cursor: pointer;
 	transition: all 200ms ease-in;
+	border: none;
+	font-size: 1.1rem;
+	letter-spacing: -0.003rem;
 	&:hover {
 		text-decoration: none;
 		cursor: pointer;

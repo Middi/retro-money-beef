@@ -28,7 +28,7 @@
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'vintage-cash-cow'); ?></a>
         
 <div class="wrapper">
-  <div class="container-nav">
+  <div class="container-nav pad">
 
     <div id="logo" class="brand-header menuUp">
 

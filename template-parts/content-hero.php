@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="right-pic">
+<section class="right-pic home-page-padding">
     <div class="container flex">
         <div class="right-pic-text slide-in-left">
             <h1><?php the_field('heading'); ?></h1>

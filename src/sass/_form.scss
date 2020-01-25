@@ -1,0 +1,18 @@
+input {
+    height: 36px;
+    padding: 6px 12px;
+    border: 1px solid $border;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin: 4px;
+}
+
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    input {
+        flex-grow: 2;
+    }
+}

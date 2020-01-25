@@ -49,6 +49,11 @@ require get_template_directory() . '/functions/template-functions.php';
 require get_template_directory() . '/functions/customizer.php';
 
 /**
+ * Customizer additions.
+ */
+require get_template_directory() . '/functions/acf-functions.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {

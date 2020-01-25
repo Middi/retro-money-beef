@@ -20,6 +20,9 @@ if (navToggle) {
 
 jQuery('#user-form').ajaxForm({
   success: function success(res) {
+    jQuery('#user-form').fadeOut("fast", function () {
+      jQuery('.alert').fadeIn();
+    });
     jQuery('.notice').html(res);
     jQuery('.notice').fadeIn();
     setTimeout(function () {

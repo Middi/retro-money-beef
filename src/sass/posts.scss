@@ -20,12 +20,15 @@ section {
 
 .container, .container-nav {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 15px;
 	position: relative;
 	padding: 0 15px;
 }
 
-.container { padding: 60px 15px }
+.container { 
+	margin: 0 auto;
+	padding: 20px 15px;
+}r { padding: 60px 15px }
 
 .sm-container {
 	max-width: 800px;

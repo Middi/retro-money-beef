@@ -45,7 +45,7 @@ embed,iframe,object{max-width:100%}
 .gallery-caption{display:block}
 .editor-post-title__input{font-family:"Open Sans",sans-serif;font-weight:700}
 .admin-bar header{top:32px}
-.header-logo{position:absolute;top:10px;left:0;height:40px;z-index:999}
+.header-logo{position:absolute;top:10px;left:15px;height:40px;z-index:999}
 #nav-menu{z-index:998;position:absolute;top:0;right:0}
 #nav-menu ul{-webkit-transition:500ms all ease-in-out;transition:500ms all ease-in-out;list-style-type:none;padding:0}
 #nav-menu li{position:relative;display:inline-block;padding:10px 0}
@@ -83,8 +83,9 @@ footer .social-icons:hover{opacity:1}
 footer .copyright{font-family:"Open Sans",sans-serif;margin:0;padding:0 5px;color:#3b3a3d;font-size:.9rem}
 html,body,main,#page{height:100%;background-color:#fefefe}
 section{width:100%;position:relative}
-.container,.container-nav{max-width:1200px;margin:0 auto;position:relative;padding:0 15px}
-.container{padding:60px 15px}
+.container,.container-nav{max-width:1200px;margin:0 15px;position:relative;padding:0 15px}
+.container{margin:0 auto;padding:20px 15px}
+r{padding:60px 15px}
 .sm-container{max-width:800px;margin:0 auto;position:relative}
 .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .bg-squiggle{background-image:url("../img/squiggle.png");overflow:hidden}

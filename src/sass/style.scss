@@ -7,9 +7,9 @@
 @import "colors";
 @import "typography";
 @import "buttons";
+@import "form";
 @import "nav";
-@import "hero";
-@import "about";
+@import "layout";
 @import "egobar";
 @import "hiw";
 @import "card";
@@ -26,6 +26,10 @@ section {
 	position: relative;
 }
 
+.home-page-padding {
+	padding: 50px 0;
+}
+
 .container, .container-nav {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -33,10 +37,13 @@ section {
 	padding: 0 15px;
 }
 
-.container { padding: 60px 15px }
+.container { 
+	margin: 0 auto;
+	padding: 20px 15px;
+}
 
 .sm-container {
-	max-width: 800px;
+	max-width: 700px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -53,7 +60,7 @@ section {
 
 .title-container-h1 {
 	text-align: center;
-	padding: 30px 15px;
+	padding: 0px 15px;
 }
 
 .title-container-h3 { text-align: center }
@@ -65,3 +72,23 @@ section {
 .underline-yellow:before { background-color: $yellow }
 
 .bg-grey { background-color: darken($light-grey, 2) }
+
+.alert {
+	display: none;
+	border: 1px solid desaturate(darken($green, 15), 15);
+	border-radius: 6px;
+	width: 100%;
+	p {
+		color: $black;
+		margin: 0;
+		padding: 10px;
+	}
+}
+
+.success {
+	background-color: $green;
+}
+
+.mt-1 {
+	margin-top: 10px
+}
