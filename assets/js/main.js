@@ -38,7 +38,7 @@ jQuery('#user-form').ajaxForm({
       jQuery('.alert').delay(1500).fadeOut();
     }
 
-    jQuery('.notice').html(res);
+    jQuery('.notice').html(message);
     jQuery('.notice').fadeIn();
     setTimeout(function () {
       jQuery('.notice').fadeOut();
