@@ -17,8 +17,8 @@
             <h1 class="h1-underline underline-pink">Get your selling pack.</h1>
             <p>Signup now for your free selling starter pack and turn your old items into cash.</p>
                 
-                <div class="alert success">
-                    <p class="text-center">You are now signed up, Check your email.</p>
+                <div id="login-feedback" class="alert">
+                    <p class="text-center"></p>
                 </div>
 
             <form id="user-form" enctype="multipart/form-data" method="POST" action="<?php echo admin_url('admin-ajax.php'); ?>">

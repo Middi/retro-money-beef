@@ -75,11 +75,12 @@ section {
 
 .alert {
 	display: none;
-	border: 1px solid desaturate(darken($green, 15), 15);
+	border: 1px solid $border;
 	border-radius: 6px;
-	width: 100%;
+	width: 96%;
+	margin: 5px auto;
 	p {
-		color: $black;
+		color: black;
 		margin: 0;
 		padding: 10px;
 	}
@@ -87,6 +88,10 @@ section {
 
 .success {
 	background-color: $green;
+}
+
+.error {
+	background-color: $alert;
 }
 
 .mt-1 {

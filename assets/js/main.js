@@ -22,10 +22,22 @@ jQuery('#user-form').ajaxForm({
   success: function success(res) {
     var status = JSON.parse(res).status;
     var message = JSON.parse(res).message;
-    jQuery('#user-form').fadeOut("fast", function () {
+    status ? status = 'success' : status = 'error';
+
+    function messageUpdate() {
       jQuery('.alert p').html(message);
-      jQuery('.alert').fadeIn();
-    });
+      jQuery('.alert').addClass(status).fadeIn();
+    }
+
+    if (status === 'success') {
+      jQuery('#user-form').fadeOut("fast", function () {
+        messageUpdate();
+      });
+    } else {
+      messageUpdate();
+      jQuery('.alert').delay(1500).fadeOut();
+    }
+
     jQuery('.notice').html(res);
     jQuery('.notice').fadeIn();
     setTimeout(function () {
@@ -33,7 +45,7 @@ jQuery('#user-form').ajaxForm({
     }, 12000);
   },
   error: function error(res) {
-    console.log('nhh', res);
+    console.log('Something went wrong', res);
   }
 }); // var getUrlParameter = function getUrlParameter(sParam) {
 // 	var sPageURL = window.location.search.substring(1),

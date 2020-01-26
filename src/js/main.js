@@ -5,36 +5,52 @@ var navMenu = document.querySelector('#nav-menu');
 var contNav = document.querySelector('.cont-nav');
 
 if (navToggle) {
-  navToggle.addEventListener('click', function (e) {
-    e.preventDefault();
-    this.classList.toggle('open');
+	navToggle.addEventListener('click', function (e) {
+		e.preventDefault();
+		this.classList.toggle('open');
 
-    if (document.body.clientWidth > 720) {
-      navMenuUl.classList.toggle('nav-open');
-    } else navMenu.classList.toggle('nav-open');
-  });
+		if (document.body.clientWidth > 720) {
+			navMenuUl.classList.toggle('nav-open');
+		} else navMenu.classList.toggle('nav-open');
+	});
 }
 
 // Ajax Forms
 jQuery('#user-form').ajaxForm({
-  success: function success(res) {
-    var status = JSON.parse(res).status;
-    var message = JSON.parse(res).message;
+	success: function success(res) {
+		var status = JSON.parse(res).status;
+		var message = JSON.parse(res).message;
 
-    jQuery('#user-form').fadeOut("fast", function(){
-      jQuery('.alert p').html(message);
-      jQuery('.alert').fadeIn();
-    });
-    jQuery('.notice').html(res);
-    jQuery('.notice').fadeIn();
-    setTimeout(function () {
-      jQuery('.notice').fadeOut();
-    }, 12000);
-  },
-  error: function error(res) {
-    console.log('nhh', res);
-  }
-}); 
+		status ? status = 'success' : status = 'error';
+
+		function messageUpdate() {
+			jQuery('.alert p').html(message);
+			jQuery('.alert')
+				.addClass(status)
+				.fadeIn();
+		}
+
+		if(status === 'success') {
+			jQuery('#user-form').fadeOut("fast", function () {
+				messageUpdate();
+			});
+		}
+		else {
+			messageUpdate();
+			jQuery('.alert').delay(1500).fadeOut();
+		}
+		
+
+		jQuery('.notice').html(res);
+		jQuery('.notice').fadeIn();
+		setTimeout(function () {
+			jQuery('.notice').fadeOut();
+		}, 12000);
+	},
+	error: function error(res) {
+		console.log('Something went wrong', res);
+	}
+});
 
 // var getUrlParameter = function getUrlParameter(sParam) {
 // 	var sPageURL = window.location.search.substring(1),
@@ -54,49 +70,49 @@ jQuery('#user-form').ajaxForm({
 // });
 
 // Ego Bar
-if(jQuery('#carousel').length > 0) {
+if (jQuery('#carousel').length > 0) {
 
-  var carousel = jQuery('#carousel');
-  var image = jQuery('#ego-2');
-  var i = 0;
-  
-  setInterval(swap, 30);
-  
-  function swap() {
-    carousel.css('left', i);
-    i--;
-    var imagePosition = image.offset();
-    if(imagePosition.left < 0) {
-        i = -1;
-    }
-  }
-  
+	var carousel = jQuery('#carousel');
+	var image = jQuery('#ego-2');
+	var i = 0;
+
+	setInterval(swap, 30);
+
+	function swap() {
+		carousel.css('left', i);
+		i--;
+		var imagePosition = image.offset();
+		if (imagePosition.left < 0) {
+			i = -1;
+		}
+	}
+
 }
 
 // Scroll Animation
-jQuery(document).ready(function() {
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = jQuery(window).scrollTop();
-    var docViewBottom = docViewTop + jQuery(window).height();
+jQuery(document).ready(function () {
+	// Check if element is scrolled into view
+	function isScrolledIntoView(elem) {
+		var docViewTop = jQuery(window).scrollTop();
+		var docViewBottom = docViewTop + jQuery(window).height();
 
-    var elemTop = jQuery(elem).offset().top + 40;
-    var elemBottom = elemTop + jQuery(elem).height();
+		var elemTop = jQuery(elem).offset().top + 40;
+		var elemBottom = elemTop + jQuery(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
-  // If element is scrolled into view, fade it in
-  jQuery(window).scroll(function() {
-    jQuery('.scroll-animation').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        if(jQuery(this).hasClass('right-animate')) {
-          jQuery(this).addClass('slide-in-right');
-        }
-        else if(jQuery(this).hasClass('down-animate')) {
-          jQuery(this).addClass('slide-down');
-        }
-        else jQuery(this).addClass('slide-in-left');
-      }
-    });
-  });
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+	// If element is scrolled into view, fade it in
+	jQuery(window).scroll(function () {
+		jQuery('.scroll-animation').each(function () {
+			if (isScrolledIntoView(this) === true) {
+				if (jQuery(this).hasClass('right-animate')) {
+					jQuery(this).addClass('slide-in-right');
+				}
+				else if (jQuery(this).hasClass('down-animate')) {
+					jQuery(this).addClass('slide-down');
+				}
+				else jQuery(this).addClass('slide-in-left');
+			}
+		});
+	});
 });
