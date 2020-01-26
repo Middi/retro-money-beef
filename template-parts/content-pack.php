@@ -10,7 +10,7 @@
 ?>
 
 
-<section class="left-pic bg-grey">
+<section id="signup" class="left-pic bg-grey">
     <div class="container flex">
         <div class="left-pic-img car scroll-animation"></div>
         <div class="left-pic-text scroll-animation right-animate">

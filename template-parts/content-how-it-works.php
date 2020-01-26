@@ -77,7 +77,7 @@
         </div>
 
         <div class="text-center">
-            <a class="btn btn-black" href="#"><?php the_field('cta_text'); ?> </a>
+            <a class="btn btn-black" href="#signup"><?php the_field('cta_text'); ?> </a>
         </div>
 
         <div class="hiw-blob">

@@ -1,4 +1,7 @@
-// Nav bar
+// ===========================
+// Nav Bar
+// ===========================
+
 var navToggle = document.querySelector('#nav-toggle');
 var navMenuUl = document.querySelector('.nav-ul');
 var navMenu = document.querySelector('#nav-menu');
@@ -15,7 +18,28 @@ if (navToggle) {
 	});
 }
 
-// Ajax Forms
+
+// ===========================
+// Smooth Scrolling
+// ===========================
+
+jQuery('body').on('click', 'a[href^="#"]', function (event) {
+	event.preventDefault();
+	var target_offset = jQuery(this.hash).offset() ? jQuery(this.hash).offset().top : 0;
+	//change this number to create the additional off set        
+	var customoffset = 60;
+	jQuery('html, body').animate({
+		scrollTop: target_offset - customoffset
+	}, 1000);
+	navMenu.classList.toggle('nav-open');
+	navToggle.classList.toggle('open');
+});
+
+
+// ===========================
+// AJAX Forms
+// ===========================
+
 jQuery('#user-form').ajaxForm({
 	success: function success(res) {
 		var status = JSON.parse(res).status;
@@ -40,7 +64,7 @@ jQuery('#user-form').ajaxForm({
 			jQuery('.alert').delay(1500).fadeOut();
 		}
 		
-
+		// TODO: needs to be admin js file
 		jQuery('.notice').html(message);
 		jQuery('.notice').fadeIn();
 		setTimeout(function () {
@@ -69,7 +93,11 @@ jQuery('#user-form').ajaxForm({
 // 	jQuery('#acf-field_5df80db3d9ca0').val(getUrlParameter('customer'));
 // });
 
-// Ego Bar
+
+// ===========================
+// Egobar
+// ===========================
+
 if (jQuery('#carousel').length > 0) {
 
 	var carousel = jQuery('#carousel');
@@ -89,7 +117,11 @@ if (jQuery('#carousel').length > 0) {
 
 }
 
+
+// ===========================
 // Scroll Animation
+// ===========================
+
 jQuery(document).ready(function () {
 	// Check if element is scrolled into view
 	function isScrolledIntoView(elem) {

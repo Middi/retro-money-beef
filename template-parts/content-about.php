@@ -17,7 +17,7 @@
             <h1 class="h1-underline underline-green"><?php the_field('about_heading'); ?></h1>
             <?php the_field('about_text'); ?>
             <br/> <br/>
-            <a class="btn btn-black" href="#"> <?php the_field('cta_text'); ?> </a>
+            <a class="btn btn-black" href="#signup"><?php the_field('cta_text'); ?> </a>
         </div>
 
         <div class="about-blob">

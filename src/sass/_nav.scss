@@ -2,16 +2,16 @@
 
 .header-logo {
 	position: absolute;
-	top: 10px;
+	top: 14px;
 	left: 15px;
 	height: 40px;
 	z-index: 999;
 }
 
-#nav-menu {
+.nav {
 	z-index: 998;
 	position: absolute;
-	top: 0;
+	top: 6px;
 	right: 0;
 
 	ul {
@@ -135,12 +135,43 @@
 	}
 }
 
+
+
+li.nav-btn {
+	padding: 6px 10px;
+	margin: 0 15px;
+	background-color: $black;
+	a {
+		color: white;
+		text-transform: none;
+		font-family:'Libre Baskerville', serif;
+		text-decoration: none;
+		font-weight: 700;
+		cursor: pointer;
+		transition: all 200ms ease-in;
+		font-size: 1rem;
+		letter-spacing: -0.003rem;
+	}
+	&:hover {
+		text-decoration: none;
+		cursor: pointer;
+		color: white;
+		background-color: lighten($black, 8);
+	}
+
+}
+
+
+
 @media all and (max-width: 782px) {
 	.admin-bar header { top: 46px }
 }
 
 /* Mobile */
 @media all and (max-width: 720px) {
+
+.header-logo { top: 10px }
+
 	#nav-menu {
 		height: 0vh;
 		width: 100%;
@@ -175,6 +206,12 @@
 
 				&:hover:before { width: 50% }
 			}
+		}
+
+		.nav-btn {
+			padding: 6px 10px;
+			margin: 15px auto;
+			width: 300px;
 		}
 	}
 	#nav-toggle {
